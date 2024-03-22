@@ -18,7 +18,7 @@ redirect_from:
 <span class='anchor' id='about-me'></span>
 
 # About Me 
-I'm Pinxuan Dai(戴品炫), a Ph.D. student at State Key Lab of CAD&CG, [Zhejiang University](https://www.zju.edu.cn/english/), supervised by Prof. [Weiwei Xu](http://www.cad.zju.edu.cn/home/weiweixu/weiweixu_en.htm). I did my undergrad at [UESTC](https://en.uestc.edu.cn/). My research interests are view synthesis and scene reconstruction.
+I'm Pinxuan Dai(戴品炫), Ph.D. student at State Key Lab of CAD&CG, [Zhejiang University](https://www.zju.edu.cn/english/), supervised by Prof. [Weiwei Xu](http://www.cad.zju.edu.cn/home/weiweixu/weiweixu_en.htm). I did my undergrad at [UESTC](https://en.uestc.edu.cn/). My research interests are view synthesis and scene reconstruction.
 
 
 <!-- # 🔥 News
