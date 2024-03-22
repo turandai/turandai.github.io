@@ -30,7 +30,6 @@ I'm Pinxuan Dai (戴品炫), Ph.D. student at State Key Lab of CAD&CG, [Zhejiang
 <span class='anchor' id='publication'></span>
 
 # Publications
-
 <div class='paper-box'>
 <div class='paper-box-image'><div><img src='images/dfr.jpg' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
@@ -45,7 +44,6 @@ Computer Graphics Forum (EGSR 2022)
 \[[Code](https://github.com/turandai/dfr)\]
 
 *We improve reflection synthesis on curved surfaces in image-based rendering using constrained reflection flow.*
-
 </div>
 </div>
 
