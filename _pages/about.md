@@ -44,7 +44,7 @@ Computer Graphics Forum (EGSR 2022)
 \[[Paper](https://diglib.eg.org/bitstream/handle/10.1111/cgf14593/v41i4pp139-148.pdf)\]
 \[[Code](https://github.com/turandai/dfr)\]
 
-*We improve reflection synthesis on curved surfaces using constrained reflection flow.*
+*We improve reflection synthesis on curved surfaces in image-based rendering using constrained reflection flow.*
 
 </div>
 </div>
