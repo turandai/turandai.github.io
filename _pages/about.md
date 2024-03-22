@@ -32,12 +32,17 @@ I'm Pinxuan Dai(戴品炫), Ph.D. student at State Key Lab of CAD&CG, [Zhejiang 
 <div class='paper-box'><div class='paper-box-image'><div><img src='images/500x300.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
-## Deep Residual Learning for Image Recognition  
-**Kaiming He**, Xiangyu Zhang, Shaoqing Ren, Jian Sun  
-CVPR 2016  
+## Deep Residual Learning for Image Recognition
+
+**Kaiming He**, Xiangyu Zhang, Shaoqing Ren, Jian Sun
+
+CVPR 2016
+
+introduction...
+
 \[[Project](https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=DhtAFkwAAAAJ&citation_for_view=DhtAFkwAAAAJ:ALROH1vI_8AC)\]
 \[[Pdf](https://openaccess.thecvf.com/content_cvpr_2016/papers/He_Deep_Residual_Learning_CVPR_2016_paper.pdf)\]  
-introduction...
+
 </div>
 </div>
 
