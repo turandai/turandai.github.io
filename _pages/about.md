@@ -33,7 +33,7 @@ I'm Pinxuan Dai(戴品炫), Ph.D. student at State Key Lab of CAD&CG, [Zhejiang 
 <div class='paper-box-image'><div><img src='images/500x300.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
-## Deep Flow Rendering: View Synthesis via Layer-aware Reflection Flow
+### Deep Flow Rendering: View Synthesis via Layer-aware Reflection Flow
 
 **Pinxuan Dai**, Ning Xie
 
