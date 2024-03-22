@@ -31,7 +31,7 @@ I'm Pinxuan Dai (戴品炫), Ph.D. student at State Key Lab of CAD&CG, [Zhejiang
 
 # Publications
 <div class='paper-box'>
-<div class='paper-box-image'><div><img src='images/dfr.jpg' alt="sym" width="100%"></div></div>
+<div class='paper-box-image'><div><img src='images/500x300.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
 ## Deep Flow Rendering: View Synthesis via Layer-aware Reflection Flow
@@ -39,7 +39,6 @@ I'm Pinxuan Dai (戴品炫), Ph.D. student at State Key Lab of CAD&CG, [Zhejiang
 **Pinxuan Dai**, Ning Xie
 
 Computer Graphics Forum (EGSR 2022)
-
 \[[Paper](https://diglib.eg.org/bitstream/handle/10.1111/cgf14593/v41i4pp139-148.pdf)\]
 \[[Code](https://github.com/turandai/dfr)\]
 
