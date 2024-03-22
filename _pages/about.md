@@ -32,8 +32,8 @@ about me.
 ## Deep Residual Learning for Image Recognition  
 **Kaiming He**, Xiangyu Zhang, Shaoqing Ren, Jian Sun  
 CVPR 2016  
-$[$[Project](https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=DhtAFkwAAAAJ&citation_for_view=DhtAFkwAAAAJ:ALROH1vI_8AC)$]$
-$[$[Pdf](https://openaccess.thecvf.com/content_cvpr_2016/papers/He_Deep_Residual_Learning_CVPR_2016_paper.pdf)$]$  
+\[[Project](https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=DhtAFkwAAAAJ&citation_for_view=DhtAFkwAAAAJ:ALROH1vI_8AC)\]
+\[[Pdf](https://openaccess.thecvf.com/content_cvpr_2016/papers/He_Deep_Residual_Learning_CVPR_2016_paper.pdf)\]  
 introduction...
 </div>
 </div>
