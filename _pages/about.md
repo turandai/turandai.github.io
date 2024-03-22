@@ -29,20 +29,20 @@ I'm Pinxuan Dai(戴品炫), Ph.D. student at State Key Lab of CAD&CG, [Zhejiang 
 
 # Publications
 
-<div class='paper-box'><div class='paper-box-image'><div><img src='images/500x300.png' alt="sym" width="100%"></div></div>
+<div class='paper-box'>
+<div class='paper-box-image'><div><img src='images/500x300.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
-## Deep Residual Learning for Image Recognition
+## Deep Flow Rendering: View Synthesis via Layer-aware Reflection Flow
 
-**Kaiming He**, Xiangyu Zhang, Shaoqing Ren, Jian Sun
+**Pinxuan Dai**, Ning Xie
 
-CVPR 2016
+Computer Graphics Forum (EGSR 2022)
 
-introduction...
+We improve reflection synthesis on curved surfaces using constrained reflection flow.
 
-\[[Project](https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=DhtAFkwAAAAJ&citation_for_view=DhtAFkwAAAAJ:ALROH1vI_8AC)\]
-\[[Pdf](https://openaccess.thecvf.com/content_cvpr_2016/papers/He_Deep_Residual_Learning_CVPR_2016_paper.pdf)\]  
-
+\[[Paper](https://diglib.eg.org/bitstream/handle/10.1111/cgf14593/v41i4pp139-148.pdf)\]  
+\[[Code](https://github.com/turandai/dfr)\]
 </div>
 </div>
 
