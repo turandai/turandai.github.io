@@ -31,7 +31,7 @@ I'm a Ph.D. student at State Key Lab of CAD&CG, [Zhejiang University](https://ww
 
 # Publications
 <div class='paper-box'>
-<div class='paper-box-image'><div><img src='images/500x300.png' alt="sym" width="100%"></div></div>
+<div class='paper-box-image'><div><img src='images/dfr.jpg' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
 ## Deep Flow Rendering: View Synthesis via Layer-aware Reflection Flow
