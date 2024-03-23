@@ -25,7 +25,7 @@ author:
   avatar           : "images/android-chrome-512x512.png"
   bio              : "戴品炫"
   location         : "Hangzhou, China"
-  employer         :
+  employer         : "Zhejiang University"
   pubmed           : 
   googlescholar    : #"https://scholar.google.com/citations?user=YOUR_GOOGLE_SCHOLAR_ID"
   email            : #"daipinxuan@zju.edu.cn"
@@ -44,7 +44,7 @@ author:
   impactstory      : # e.g., "https://profiles.impactstory.org/u/xxxx-xxxx-xxxx-xxxx"
   lastfm           :
   linkedin         : # e.g., "linkedin username"
-  dblp             : # e.g., "https://dblp.org/pid/xx/xxxx.html"
+  dblp             : "https://dblp.org/pid/325/5396.html"
   orcid            : "https://orcid.org/0000-0001-6983-3463"
   pinterest        :
   soundcloud       :

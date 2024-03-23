@@ -36,7 +36,7 @@ I'm a Ph.D. student at State Key Lab of CAD&CG, [Zhejiang University](https://ww
 
 ## Deep Flow Rendering: View Synthesis via Layer-aware Reflection Flow
 
-**Pinxuan Dai**, Ning Xie
+**Pinxuan Dai**, [Ning Xie](http://www.xielab.cn/publications.html)
 
 Computer Graphics Forum (EGSR 2022)
 \[[Paper](https://diglib.eg.org/bitstream/handle/10.1111/cgf14593/v41i4pp139-148.pdf)\]
