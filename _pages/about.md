@@ -34,7 +34,7 @@ I'm a Ph.D. student at State Key Lab of CAD&CG, [Zhejiang University](https://ww
 <div class='paper-box-image'><div><img src='images/gaussian_surfels.jpg' alt="sym" width="80%"></div></div>
 <div class='paper-box-text' markdown="1">
 
-## High-qualitySurfaceReconstructionusingGaussianSurfels
+## High-quality Surface Reconstruction using Gaussian Surfels
 
 **Pinxuan Dai**, 
 [Jiamin Xu](https://superxjm.github.io/), 
