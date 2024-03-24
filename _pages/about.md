@@ -44,7 +44,7 @@ Wenxiang Xie,
 [Weiwei Xu](http://www.cad.zju.edu.cn/home/weiweixu/index.htm)
 
 
-<span style="color: rgb(110, 140, 60);"><b>ACM SIGGRAPH 2024</b></span>
+<span style="color: rgb(110, 140, 60);">ACM SIGGRAPH 2024</span>
 <!-- \[[Project]()\]
 \[[Paper]()\]
 \[[Code]()\] -->
@@ -60,7 +60,7 @@ Wenxiang Xie,
 
 **Pinxuan Dai**, [Ning Xie](http://www.xielab.cn/publications.html)
 
-<span style="color: rgb(110, 140, 60);"><b>Computer Graphics Forum (EGSR 2022)</b></span>
+<span style="color: rgb(110, 140, 60);">Computer Graphics Forum (EGSR 2022)</span>
 \[[Paper](https://diglib.eg.org/bitstream/handle/10.1111/cgf14593/v41i4pp139-148.pdf)\]
 \[[Code](https://github.com/turandai/dfr)\]
 
