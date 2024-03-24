@@ -31,7 +31,7 @@ I'm a Ph.D. student at State Key Lab of CAD&CG, [Zhejiang University](https://ww
 
 # Publications
 <div class='paper-box'>
-<div class='paper-box-image'><div><img src='images/gaussian_surfels.jpg' alt="sym" width="100%"></div></div>
+<div class='paper-box-image'><div><img src='images/gaussian_surfels.jpg' alt="sym" width="80%"></div></div>
 <div class='paper-box-text' markdown="1">
 
 ## High-qualitySurfaceReconstructionusingGaussianSurfels
@@ -52,7 +52,7 @@ ACM SIGGRAPH 2024
 </div>
 </div>
 <div class='paper-box'>
-<div class='paper-box-image'><div><img src='images/deep_flow_rendering.jpg' alt="sym" width="100%"></div></div>
+<div class='paper-box-image'><div><img src='images/deep_flow_rendering.jpg' alt="sym" width="90%"></div></div>
 <div class='paper-box-text' markdown="1">
 
 ## Deep Flow Rendering: View Synthesis via Layer-aware Reflection Flow
