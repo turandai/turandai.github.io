@@ -31,6 +31,27 @@ I'm a Ph.D. student at State Key Lab of CAD&CG, [Zhejiang University](https://ww
 
 # Publications
 <div class='paper-box'>
+<div class='paper-box-image'><div><img src='images/gaussian_surfels.jpg' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+
+## High-qualitySurfaceReconstructionusingGaussianSurfels
+
+**Pinxuan Dai**, 
+[Jiamin Xu](https://superxjm.github.io/), 
+Wenxiang Xie, 
+[Xinguo Liu](http://www.cad.zju.edu.cn/home/xgliu/"), 
+[Huamin Wang](https://wanghmin.github.io/index.html), 
+[Weiwei Xu](http://www.cad.zju.edu.cn/home/weiweixu/index.htm)
+
+ACM SIGGRAPH 2024
+\[[Project](https://turandai.github.io/projects/gaussian_surfels/)\]
+\[[Paper]()\]
+\[[Code]()\]
+
+*We use Gaussian surfels as geometry primitive to reconstruct high-quality mesh surface from multi-view images.*
+</div>
+</div>
+<div class='paper-box'>
 <div class='paper-box-image'><div><img src='images/deep_flow_rendering.jpg' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
