@@ -43,7 +43,8 @@ Wenxiang Xie,
 [Huamin Wang](https://wanghmin.github.io/index.html),
 [Weiwei Xu](http://www.cad.zju.edu.cn/home/weiweixu/index.htm)
 
-ACM SIGGRAPH 2024
+
+<span style="color: rgb(128, 158, 79);">ACM SIGGRAPH 2024</span>
 \[[Project](https://turandai.github.io/projects/gaussian_surfels/)\]
 \[[Paper]()\]
 \[[Code]()\]
