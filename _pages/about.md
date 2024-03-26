@@ -45,9 +45,9 @@ Wenxiang Xie,
 
 
 <span style="color: rgb(110, 140, 60);">ACM SIGGRAPH 2024</span>
-<!-- \[[Project]()\]
+\[[Project](https://turandai.github.io/projects/gaussian_surfels/)\]
 \[[Paper]()\]
-\[[Code]()\] -->
+\[[Code]()\]
 
 *We use Gaussian surfels as geometry primitive to reconstruct high-quality mesh surface from multi-view images.*
 </div>
