@@ -37,7 +37,7 @@ I'm a Ph.D. student at State Key Lab of CAD&CG, [Zhejiang University](https://ww
 ## High-quality Surface Reconstruction using Gaussian Surfels
 
 **Pinxuan Dai**\*, 
-[Jiamin Xu\*](https://superxjm.github.io/),
+[Jiamin Xu](https://superxjm.github.io/)\*,
 Wenxiang Xie,
 [Xinguo Liu](http://www.cad.zju.edu.cn/home/xgliu/"),
 [Huamin Wang](https://wanghmin.github.io/index.html),
