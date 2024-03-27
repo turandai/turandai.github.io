@@ -43,7 +43,7 @@ I'm a Ph.D. student at State Key Lab of CAD&CG, [Zhejiang University](https://ww
 Wenxiang Xie,
 [Xinguo Liu](http://www.cad.zju.edu.cn/home/xgliu/"),
 [Huamin Wang](https://wanghmin.github.io/index.html),
-[Weiwei Xu<sup>†</sup>](http://www.cad.zju.edu.cn/home/weiweixu/index.htm)
+[Weiwei Xu](http://www.cad.zju.edu.cn/home/weiweixu/index.htm)<sup>†</sup>
 
 
 <span style="color: rgb(110, 140, 60);">ACM SIGGRAPH 2024</span>
@@ -60,7 +60,7 @@ Wenxiang Xie,
 
 ## Deep Flow Rendering: View Synthesis via Layer-aware Reflection Flow
 
-**Pinxuan Dai**, [Ning Xie<sup>†</sup>](http://www.xielab.cn/index.html)
+**Pinxuan Dai**, [Ning Xie](http://www.xielab.cn/index.html)<sup>†</sup>
 
 <span style="color: rgb(110, 140, 60);">Computer Graphics Forum (EGSR 2022)</span>
 \[[Paper](https://diglib.eg.org/bitstream/handle/10.1111/cgf14593/v41i4pp139-148.pdf)\]
