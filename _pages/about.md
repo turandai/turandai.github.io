@@ -21,6 +21,7 @@ redirect_from:
 I'm a Ph.D. student at State Key Lab of CAD&CG, [Zhejiang University](https://www.zju.edu.cn/english/), supervised by Prof. [Weiwei Xu](http://www.cad.zju.edu.cn/home/weiweixu/index.htm). I did my undergrad at [UESTC](https://en.uestc.edu.cn/). My research interests are view synthesis and scene reconstruction.
 
 **Email**: daipinxuan AT zju.edu.cn
+**Address**: Mengminwei Building, No.866 Yuhangtang Rd, Hangzhou, China
 
 
 <!-- # 🔥 News
