@@ -84,5 +84,5 @@ Wenxiang Xie,
 - *2021.03*, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet.  \| [\[video\]](https://github.com/) -->
 
 <span class='anchor' id='experiences'></span>
-# Experience
+# Experiences
 - Netease Fuxi AI Lab, 2023. Research intern in inverse rendering and material estimation.
