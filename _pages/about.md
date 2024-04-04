@@ -85,4 +85,4 @@ Wenxiang Xie,
 
 <span class='anchor' id='experiences'></span>
 # Experiences
-- Netease Fuxi AI Lab, 2023. Research intern in inverse rendering and material estimation.
+- *2023*, Netease Fuxi AI Lab, research intern in inverse rendering and material estimation.
