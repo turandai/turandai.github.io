@@ -513,6 +513,7 @@ body {
 
 .conference {
   font-size: 20px;
+  font-weight: bold;
   color: rgb(110, 140, 60);
   margin-top: -15px;
   margin-bottom: 5px;
