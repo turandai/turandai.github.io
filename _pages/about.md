@@ -25,10 +25,6 @@ I'm a Ph.D. student at State Key Lab of CAD&CG, [Zhejiang University](https://ww
 **Email**: daipinxuan AT zju.edu.cn
 
 
-<!-- # 🔥 News
-- *2022.02*: &nbsp;🎉🎉 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. 
-- *2022.02*: &nbsp;🎉🎉 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet.  -->
-
 <span class='anchor' id='publication'></span>
 
 # Publications
@@ -71,18 +67,7 @@ Wenxiang Xie,
 </div>
 
 
-<!-- # 🎖 Honors and Awards
-- *2021.10* Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. 
-- *2021.09* Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet.  -->
-
-<!-- # 📖 Educations
-- *2019.06 - now*, edu1 
-- *2015.09 - 2019.06*, edu2 -->
-
-<!-- # 💬 Invited Talks
-- *2021.06*, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. 
-- *2021.03*, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet.  \| [\[video\]](https://github.com/) -->
-
 <span class='anchor' id='experiences'></span>
 # Experiences
 - *2023.03-2023.06*, Netease Fuxi AI Lab, research intern in inverse rendering.
+
