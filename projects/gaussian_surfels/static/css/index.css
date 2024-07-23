@@ -513,7 +513,7 @@ body {
 }
 
 .conference {
-  font-size: 18px;
+  font-size: 24px;
   font-weight: bold;
   color: rgb(110, 140, 60);
   margin-top: -15px;
@@ -523,5 +523,4 @@ body {
 .univ_logo {
   margin-top: 10px;
   margin-bottom: 5px;
-  /* max-width: 700px; */
 }
