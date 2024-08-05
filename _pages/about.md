@@ -42,7 +42,8 @@ Wenxiang Xie,
 [Weiwei Xu](http://www.cad.zju.edu.cn/home/weiweixu/index.htm)<sup>†</sup>
 
 
-<span style="color: rgb(110, 140, 60);">🎀 ACM SIGGRAPH 2024</span>
+<!-- <span style="color: rgb(110, 140, 60);">🎀 ACM SIGGRAPH 2024</span> -->
+<span style="color: rgb(110, 140, 60);">ACM SIGGRAPH 2024</span>
 \[[Project](https://turandai.github.io/projects/gaussian_surfels/)\]
 \[[Paper](https://arxiv.org/pdf/2404.17774)\]
 \[[Code](https://github.com/turandai/gaussian_surfels)\]
