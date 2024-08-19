@@ -25,9 +25,9 @@ I'm a Ph.D. student in computer science at the State Key Lab of CAD&CG, [Zhejian
 **Email**: daipinxuan AT zju.edu.cn
 
 
-<span class='anchor' id='academic'></span>
+<span class='anchor' id='publications'></span>
 
-# Academic
+# Publications
 <div class='paper-box'>
 <!-- <div class='paper-box-image'><div><img src='' alt="sym" width="100%"></div></div> -->
 <div class='paper-box-text' markdown="1">
@@ -68,7 +68,7 @@ Wenxiang Xie,
 </div>
 
 
-<span class='anchor' id='industrial'></span>
-# Industrial
+<span class='anchor' id='others'></span>
+# Others
 - *2023.03-2023.06*, Netease Fuxi AI Lab, research intern in inverse rendering.
 
