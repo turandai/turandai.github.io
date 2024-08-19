@@ -29,7 +29,6 @@ I'm a Ph.D. student in computer science at the State Key Lab of CAD&CG, [Zhejian
 
 # Publications
 <div class='paper-box'>
-<!-- <div class='paper-box-image'><div><img src='' alt="sym" width="100%"></div></div> -->
 <div class='paper-box-text' markdown="1">
 
 ## High-quality Surface Reconstruction using Gaussian Surfels
@@ -59,7 +58,7 @@ Wenxiang Xie,
 
 **Pinxuan Dai**, [Ning Xie](http://www.xielab.cn/index.html)<sup>†</sup>
 
-<span style="color: rgb(110, 140, 60);">Computer Graphics Forum (EGSR 2022)</span>
+<span style="color: rgb(110, 140, 60);">Computer Graphics Forum 2022</span>
 \[[Paper](https://diglib.eg.org/bitstream/handle/10.1111/cgf14593/v41i4pp139-148.pdf)\]
 \[[Code](https://github.com/turandai/dfr)\]
 
