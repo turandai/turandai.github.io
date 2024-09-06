@@ -18,7 +18,7 @@ redirect_from:
 <span class='anchor' id='about-me'></span>
 
 # About Me 
-I'm a Ph.D. student in computer science at the State Key Lab of CAD&CG, [Zhejiang University](https://www.zju.edu.cn/english/), supervised by Prof. [Weiwei Xu](http://www.cad.zju.edu.cn/home/weiweixu/index.htm), co-supervised by [Rynson W.H. Lau](https://www.cs.cityu.edu.hk/~rynson/). I did my undergrad at [UESTC](https://en.uestc.edu.cn/). My research interests are 3D scene reconstruction and understanding.
+I'm a Ph.D. student in computer science at the State Key Lab of CAD&CG, [Zhejiang University](https://www.zju.edu.cn/english/), supervised by Prof. [Weiwei Xu](http://www.cad.zju.edu.cn/home/weiweixu/index.htm), co-supervised by Prof. [Rynson W.H. Lau](https://www.cs.cityu.edu.hk/~rynson/). I did my undergrad at [UESTC](https://en.uestc.edu.cn/). My research interests are 3D scene reconstruction and understanding.
 
 **Address**: 866 Yuhangtang Road, Hangzhou, China
 
