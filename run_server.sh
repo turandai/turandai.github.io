@@ -1,1 +1,2 @@
-bundle exec jekyll liveserve
+source ~/.rvm/scripts/rvm && rvm use 2.7.7 --default
+bundle exec jekyll liveserve --verbose --trace
