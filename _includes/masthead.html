@@ -11,11 +11,13 @@
           <li class="flexible-space"></li>
           <li class="dark-mode-icon"><i class="fas fa-adjust"></i></li>
           <script>
-            const toggleButton = document.querySelector('.dark-mode-icon');
-            toggleButton.addEventListener('click', () => {
-              console.log('dark-mode-icon clicked')
-              document.documentElement.classList.toggle('dark-mode');
-              document.body.classList.toggle('dark-mode');
+            document.addEventListener('DOMContentLoaded', () => {
+              const toggleButton = document.querySelector('.dark-mode-icon');
+              toggleButton.addEventListener('click', () => {
+                console.log('dark-mode-icon clicked')
+                document.documentElement.classList.toggle('dark-mode');
+                document.body.classList.toggle('dark-mode');
+              });
             });
           </script>
         </ul>
