@@ -1,0 +1,33 @@
+<div id="total_stars" style="display: none;">Loading...</div>
+<img id="star_badge" src="https://img.shields.io/badge/stars-count-blue" style="display: none;">
+<script>
+  const username = "turandai"; // Replace with your GitHub username
+  const apiUrl = `https://api.github.com/users/${username}/repos?per_page=100`;
+
+  async function fetchTotalStars() {
+    var totalStars = 0;
+    try {
+      let page = 1;
+      let hasMoreRepos = true;
+
+      while (hasMoreRepos) {
+        const response = await fetch(`${apiUrl}&page=${page}`);
+        const repos = await response.json();
+
+        if (repos.length === 0) {
+          hasMoreRepos = false;
+        } else {
+          totalStars += repos.reduce((sum, repo) => sum + repo.stargazers_count, 0);
+          page++;
+        }
+      }
+    //   console.log(totalStars);
+    } catch (error) {
+      console.error("Error fetching data:", error);
+    }
+    document.getElementById("total_stars").innerHTML = totalStars;
+    document.getElementById("star_badge").src = `https://img.shields.io/badge/stars-${totalStars}-9cf?labelColor=f6f6f6`
+  }
+
+  fetchTotalStars();
+</script>

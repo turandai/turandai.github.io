@@ -8,7 +8,7 @@
 # Site Settings
 title                    : "Pinxuan Dai (戴品炫)"
 description              : ""
-repository               : ""
+repository               : "turandai/turandai.github.io"
 google_scholar_stats_use_cdn : true
 
 # google analytics
