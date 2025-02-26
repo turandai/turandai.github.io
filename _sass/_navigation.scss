@@ -165,6 +165,7 @@
   margin-top: 2em;
   padding-top: 2em;
   border-top: 1px solid $border-color;
+  
 }
 
 
@@ -175,7 +176,10 @@
 .greedy-nav {
   position: relative;
   min-width: 250px;
-  background: $background-color;
+  background: $background-color-light;
+  html.dark-mode & {
+    background-color: $background-color-dark;
+  }
 
   a {
     display: block;
@@ -223,6 +227,12 @@
       }
     }
 
+    .flexible-space {
+      display: table-cell;
+      width: 100%; /* Makes this cell take all available space */
+    }
+
+
     a {
       position: relative;
 
@@ -247,6 +257,7 @@
                 transform: scaleX(1); /* reveal*/
       }
     }
+    
   }
 
   .hidden-links {

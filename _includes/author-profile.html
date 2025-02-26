@@ -63,9 +63,8 @@
       {% endif %}
       {% if author.github %}
         <li><a href="https://github.com/{{ author.github }}">
-          <i class="fab fa-fw fa-github" aria-hidden="true"></i> 
+          <i class="fab fa-fw fa-github" aria-hidden="true"></i>
           Github 
-          <!-- <br/> -->
           <img id='star_badge'  style="max-height: 16px; width: auto;"></img>
         </a></li>
       {% endif %}
@@ -116,7 +115,7 @@
           <i class="fas fa-fw fa-graduation-cap"></i> 
           Scholar 
           <!-- <br/> -->
-          <img src="https://img.shields.io/endpoint?url={{ url | url_encode }}&labelColor=f6f6f6&color=9cf&style=flat&label=citations" style="max-height: 16px; width: auto;">
+          <img src="https://img.shields.io/endpoint?url={{ url | url_encode }}&labelColor=cccccc&color=4b7ac5&style=flat&label=citations" style="max-height: 16px; width: auto;">
         </a></li>
         {% endif %}
       {% if author.pubmed %}

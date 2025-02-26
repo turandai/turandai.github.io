@@ -45,6 +45,7 @@ $type-size-6                : 1em;   // ~12px
 $type-size-7                : 0.6875em; // ~11px
 $type-size-8                : 0.625em;  // ~10px
 
+$dark_mode                  : true;
 
 /*
    Colors
@@ -53,22 +54,27 @@ $type-size-8                : 0.625em;  // ~10px
 $gray                       : #7a8288;
 $dark-gray                  : mix(#000, $gray, 40%);
 $darker-gray                : mix(#000, $gray, 60%);
-$light-gray                 : mix(#fff, $gray, 50%);
+$light-gray                 : mix(#fff, $gray, 60%);
 $lighter-gray               : mix(#fff, $gray, 90%);
 
 $body-color                 : #fff;
-$background-color           : #fff;
+$background-color-light     : #fff;
+$background-color-dark      : #2c2c2c;
+$background-color           : if($dark-mode, $background-color-dark, $background-color-light);
 $code-background-color      : #fafafa;
 $code-background-color-dark : $light-gray;
-$text-color                 : $dark-gray;
-$border-color               : $lighter-gray;
+$text-color-light           : $dark-gray;
+$text-color-dark            : $light-gray;
+$text-color                 : if($dark-mode, $text-color-dark, $text-color-light);
+$border-color               : rgba(100, 100, 100, 0.1);
 
-$primary-color              : #7a8288;
+$primary-color              : #889096;
 $success-color              : #62c462;
 $warning-color              : #f89406;
 $danger-color               : #ee5f5b;
-$info-color                 : #224b8d;
-// $info-color                 : #52adc8;
+$info-color                 : #6f8ab5;
+$pub-color                  : #7A9353;
+// $info-color                 : #4b7ac5;
 
 /* brands */
 $behance-color              : #1769FF;
@@ -155,3 +161,4 @@ $box-shadow                 : 0 1px 1px rgba(0, 0, 0, 0.125);
 $navicon-width              : 28px;
 $navicon-height             : 4px;
 $global-transition          : all 0.2s ease-in-out;
+

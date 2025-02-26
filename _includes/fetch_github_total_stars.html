@@ -1,5 +1,5 @@
 <div id="total_stars" style="display: none;">Loading...</div>
-<img id="star_badge" src="https://img.shields.io/badge/stars-count-blue" style="display: none;">
+<img id="star_badge" src="https://img.shields.io/badge/stars-count-4b7ac5?labelColor=cccccc" style="display: none;">
 <script>
   const username = "turandai"; // Replace with your GitHub username
   const apiUrl = `https://api.github.com/users/${username}/repos?per_page=100`;
@@ -26,7 +26,7 @@
       console.error("Error fetching data:", error);
     }
     document.getElementById("total_stars").innerHTML = totalStars;
-    document.getElementById("star_badge").src = `https://img.shields.io/badge/stars-${totalStars}-9cf?labelColor=f6f6f6`
+    document.getElementById("star_badge").src = `https://img.shields.io/badge/stars-${totalStars}-4b7ac5?labelColor=cccccc`
   }
 
   fetchTotalStars();

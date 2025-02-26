@@ -7,7 +7,10 @@
 html {
   /* apply a natural box layout model to all elements */
   box-sizing: border-box;
-  background-color: $background-color;
+  background-color: $background-color-light;
+  &.dark-mode {
+    background-color: $background-color-dark;
+  }
   font-size: 15px;
 
   // @include breakpoint($medium) {
@@ -16,6 +19,7 @@ html {
 
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
+
 }
 
 /* Remove margin */
@@ -84,6 +88,10 @@ a:active {
 }
 
 /* Prevent sub and sup affecting line-height in all browsers */
+
+.pub {
+  color: $pub-color;
+}
 
 sub,
 sup {
