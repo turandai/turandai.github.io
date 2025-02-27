@@ -223,13 +223,14 @@
       &:last-child {
         a {
           margin-right: 0;
+          margin-left: auto;
         }
       }
     }
 
     .flexible-space {
       display: table-cell;
-      width: 100%; /* Makes this cell take all available space */
+      width: 100%;
     }
 
 

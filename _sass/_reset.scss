@@ -3,7 +3,9 @@
    ========================================================================== */
 
 @include border-box-sizing;
-
+* {
+  background-color: transparent; /* Ensures no inherited white background */
+}
 html {
   /* apply a natural box layout model to all elements */
   box-sizing: border-box;
