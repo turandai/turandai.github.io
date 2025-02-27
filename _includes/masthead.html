@@ -8,10 +8,17 @@
           <script>
             document.addEventListener('DOMContentLoaded', () => {
               const toggleButton = document.querySelector('.dark-mode-icon');
+              const metaTag = document.querySelector('#theme-color');
               toggleButton.addEventListener('click', () => {
-                console.log('dark-mode-icon clicked')
                 document.documentElement.classList.toggle('dark-mode');
                 document.body.classList.toggle('dark-mode');
+                if (document.documentElement.classList.contains('dark-mode')) {
+                  console.log('dark theme')
+                  metaTag.setAttribute('content', '#2c2c2c'); // Dark mode color
+                } else {
+                  console.log('light theme')
+                  metaTag.setAttribute('content', '#ffffff'); // Light mode color
+                }
               });
             });
           </script>
