@@ -212,26 +212,27 @@
       display: table-cell;
       vertical-align: middle;
 
-      &:first-child {
-        font-weight: bold;
+      // &:first-child {
+      //   font-weight: bold;
 
-        a {
-          margin-left: 0;
-        }
-      }
+      //   a {
+      //     margin-left: 0;
+      //   }
+      // }
 
-      &:last-child {
-        a {
-          margin-right: 0;
-          margin-left: auto;
-        }
-      }
+      // &:last-child {
+      //   a {
+      //     margin-right: 0;
+      //     margin-left: auto;
+      //   }
+      // }
     }
 
-    .flexible-space {
-      display: table-cell;
-      width: 100%;
-    }
+    // .flexible-space {
+    //   display: table-cell;
+    //   // width: auto;
+    //   // flex-grow: 1;
+    // }
 
 
     a {

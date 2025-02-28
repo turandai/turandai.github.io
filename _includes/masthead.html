@@ -4,7 +4,12 @@
       <nav id="site-nav" class="greedy-nav">
         <!-- <button><div class="navicon"></div></button> -->
         <ul class="visible-links">
-          <li class="dark-mode-icon"><i class="fas fa-adjust"></i></li>
+          <!-- <li class="masthead__menu-item"><a href="">Homepage</a></li> -->
+          <li class="dark-mode-icon"><i class="fas fa-adjust", style="cursor: pointer;"></i></li>
+          {% for link in site.data.navigation.main %}
+            <li class="masthead__menu-item"><a href="{{ link.url }}"  target="_blank">{{ link.title }}</a></li>
+          {% endfor %}
+          <!-- <li class="flexible-space"></li> -->
           <script>
             document.addEventListener('DOMContentLoaded', () => {
               const toggleButton = document.querySelector('.dark-mode-icon');
@@ -22,10 +27,6 @@
               });
             });
           </script>
-          {% for link in site.data.navigation.main %}
-            <li class="masthead__menu-item"><a href="{{ link.url }}"  target="_blank">{{ link.title }}</a></li>
-          {% endfor %}
-          <!-- <li class="flexible-space"></li> -->
         </ul>
         <!-- <ul class="hidden-links hidden"></ul> -->
       </nav>
