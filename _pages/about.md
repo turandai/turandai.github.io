@@ -13,7 +13,13 @@ redirect_from:
 <span class='anchor' id='about-me'></span>
 
 # About Me 
-I'm a Ph.D. student in computer science at the State Key Lab of CAD&CG, [Zhejiang University](https://www.zju.edu.cn/english/), supervised by Prof. [Weiwei Xu](http://www.cad.zju.edu.cn/home/weiweixu/index.htm), co-supervised by Prof. [Rynson W.H. Lau](https://www.cs.cityu.edu.hk/~rynson/). I did my undergrad at [UESTC](https://en.uestc.edu.cn/). My research interests are 3D scene reconstruction and understanding.
+I'm a Ph.D. student in computer science at the State Key Lab of CAD&CG, 
+<img src="images/logo/zju.png" alt="icon" style="height: 1em; vertical-align: middle;"> [Zhejiang University](https://www.zju.edu.cn/english/), 
+supervised by Prof. [Weiwei Xu](http://www.cad.zju.edu.cn/home/weiweixu/index.htm), co-supervised by Prof. [Rynson W.H. Lau](https://www.cs.cityu.edu.hk/~rynson/). 
+I did my undergrad at 
+<img src="images/logo/uestc.png" alt="icon" style="height: 1em; vertical-align: middle;"> [UESTC](https://en.uestc.edu.cn/).
+My research interests are 3D scene reconstruction and understanding.
+
 
 {% if site.google_scholar_stats_use_cdn %} {% assign gsDataBaseUrl = "https://cdn.jsdelivr.net/gh/" | append: site.repository | append: "@" %}
 {% else %} {% assign gsDataBaseUrl = "https://raw.githubusercontent.com/" | append: site.repository | append: "/" %}
@@ -69,7 +75,7 @@ Wenxiang Xie,
 </div>
 
 
-<span class='anchor' id='others'></span>
+<!-- <span class='anchor' id='others'></span>
 # Others
-- *2023.03-2023.06*, Netease Fuxi AI Lab, research intern in inverse rendering.
+- *2023.03-2023.06*, Netease Fuxi AI Lab, research intern in inverse rendering. -->
 
