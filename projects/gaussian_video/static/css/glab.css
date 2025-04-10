@@ -1,0 +1,414 @@
+
+  /* Slideshow container */
+  .slideshow-container {
+	max-width: 100%;
+	position: relative;
+	margin: auto;
+  }
+  
+  /* Hide the images by default */
+  .mySlides {
+	display: none;  
+	width: 100%;  /* Make sure the container spans the full width */
+	height: 100%; /* Adjust the height of the container */
+	overflow: hidden;
+  }
+  
+  /* Next & previous buttons */
+  .prev, .next {
+	cursor: pointer;
+	position: absolute;
+	top: 50%;
+	width: auto;
+	margin-top: -22px;
+	padding: 16px;
+	color: white;
+	font-weight: bold;
+	font-size: 18px;
+	transition: 0.6s ease;
+	border-radius: 0 3px 3px 0;
+	user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+	right: 0;
+	border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover, .next:hover {
+	background-color: rgba(0,0,0,0.8);
+  }
+  
+  /* Caption text */
+  .text {
+	font-weight: bolder;
+	color: #f2f2f2;
+	font-size: 20px;
+	padding: 8px 12px;
+	position: absolute;
+	bottom: 8px;
+	width: 100%;
+	text-align: center;
+  }
+  
+  /* Number text (1/3 etc) */
+  .numbertext {
+	font-weight: bolder;
+	color: #f2f2f2;
+	font-size: 30px;
+	padding: 8px 12px;
+	position: absolute;
+	top: 0;
+  }
+  
+  /* The dots/bullets/indicators */
+  .dot {
+	cursor: pointer;
+	height: 10px;
+	width: 10px;
+	margin: 0 2px;
+	background-color: #bbb;
+	border-radius: 50%;
+	display: inline-block;
+	transition: background-color 0.6s ease;
+  }
+  
+  .active, .dot:hover {
+	background-color: #313f5f;
+  }
+  
+  /* Fading animation */
+  .fade {
+	animation-name: fade;
+	animation-duration: 1.5s;
+  }
+  
+  @keyframes fade {
+	from {opacity: .4}
+	to {opacity: 1}
+  }
+
+  .compare {
+    display: flex;
+    justify-content: space-between;
+    padding: 0px;
+}
+
+.video-area {
+    flex: 1;
+    margin: 0px;
+    text-align: center;
+}
+
+/* video {
+    width: 100%;
+    height: auto;
+} */
+
+select, video_name {
+    display: block;
+    margin: 10px auto;
+    padding: 5px;
+}
+
+video_name {
+    font-size: 16px;
+}
+
+
+.image2-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.image2-container img {
+    max-width: 90%;
+    height: auto;
+}
+
+
+  /* Slideshow container */
+  .slideshow-container {
+	max-width: 1000px;
+	position: relative;
+	margin: auto;
+  }
+  
+  /* Hide the images by default */
+  .mySlides {
+	display: none;
+  }
+  
+  /* Next & previous buttons */
+  .prev, .next {
+	cursor: pointer;
+	position: absolute;
+	top: 50%;
+	width: auto;
+	margin-top: -22px;
+	padding: 8px;
+	color: rgb(141, 141, 141);
+	/* background-color: rgba(221, 221, 221, 20); */
+	font-weight: bold;
+	font-size: 18px;
+	transition: 0.6s ease;
+	border-radius: 0 3px 3px 0;
+	user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+	right: 0;
+	border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover, .next:hover {
+	background-color: rgba(176, 176, 176, 0.8);
+  }
+  
+  .image-gallery {
+	display: flex;
+	justify-content: center;
+	gap: 60px; /* 图片间距 */
+	padding: 20px;
+	background-color: #f6f6f6; /* 背景色 */
+	border-radius: 8px; /* 可选：给背景区域添加圆角 */
+}
+.gallery-item {
+	text-align: center;
+	transition: border 0.3s ease; /* 添加过渡效果 */
+}
+.gallery-item img {
+	width: auto;
+	height: 300px; /* 设置统一的图片高度 */
+	object-fit: cover; /* 保持图片比例，裁剪填充 */
+	display: block;
+	margin: 0 auto;
+	transition: border 0.3s ease; /* 添加过渡效果 */
+	box-sizing: border-box;
+	transition: transform 0.3s ease, border-color 0.3s ease; /* 图片缩放和平滑边框过渡效果 */
+}
+.gallery-item:hover img {
+	border: 3px solid #0464b8; /* 鼠标悬停时边框颜色和宽度 */
+	border-radius: 8px; /* 可选：给边框添加圆角 */
+	transform: scale(0.95); /* 图片缩小 5% */
+}
+.gallery-item p {
+	margin: 10px 0 0;
+}
+
+.video-wrapper {
+    position: relative;
+    width: 80%; /* 宽度适应父容器 */
+    height: 0; /* 初始化高度为0 */
+    padding-bottom: 45%; /* 16:9 的高宽比 */
+    margin: auto;
+    background-color: black;
+    overflow: hidden; /* 隐藏超出容器的部分 */
+}
+
+.video-clip {
+    position: absolute;
+    top: 0;
+    width: 100%; /* 使视频宽度适应容器 */
+    height: 100%; /* 使视频高度适应容器 */
+    object-fit: contain; /* 确保视频按比例填充容器 */
+}
+
+.video-clip-left {
+    mask-image: linear-gradient(to right, rgba(0, 0, 0, 1) 50%, rgba(0, 0, 0, 0) 50%);
+    mask-size: 100% 100%;
+    mask-repeat: no-repeat;
+}
+
+.video-clip-right {
+    mask-image: linear-gradient(to left, rgba(0, 0, 0, 1) 50%, rgba(0, 0, 0, 0) 50%);
+    mask-size: 100% 100%;
+    mask-repeat: no-repeat;
+}
+
+.video-divider {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 5px;
+    height: 100%;
+    background-color: rgb(255, 255, 255);
+    cursor: ew-resize;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    user-select: none; /* 禁用文本选择 */
+	box-shadow: -2px 2px 5px rgba(0, 0, 0, 0.5); /* Shadow effect */
+    
+}
+
+.arrow-left, .arrow-right {
+    position: absolute;
+    font-size: 30px; /* 增加箭头字体大小 */
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+	user-select: none; /* 禁用文本选择 */
+	
+}
+
+.arrow-left {
+    left: -30px; /* 调整位置 */
+}
+
+.arrow-right {
+    right: -30px; /* 调整位置 */
+}
+
+.label {
+    position: absolute;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 5px;
+    font-size: 20px;
+    border-radius: 3px;
+	user-select: none; /* 禁用文本选择 */
+}
+
+.label-left {
+    top: 10px;
+    left: 10px;
+}
+
+.label-right {
+    top: 10px;
+    right: 10px;
+}
+
+
+
+
+.image-wrapper {
+    position: relative;
+    width: 50%; /* 宽度适应父容器 */
+    height: 0; /* 初始化高度为0 */
+    padding-bottom: 30%; /* 16:9 的高宽比 */
+    margin: auto;
+    background-color: black;
+    overflow: hidden; /* 隐藏超出容器的部分 */
+}
+.image-clip {
+    position: absolute;
+    top: 0;
+    width: 100%; /* 使视频宽度适应容器 */
+    height: 100%; /* 使视频高度适应容器 */
+    object-fit: contain; /* 确保视频按比例填充容器 */
+	user-select: none; /* 禁用文本选择 */
+	pointer-events: none;
+}
+
+.image-clip-left {
+    mask-image: linear-gradient(to right, rgba(0, 0, 0, 1) 50%, rgba(0, 0, 0, 0) 50%);
+    mask-size: 100% 100%;
+    mask-repeat: no-repeat;
+}
+
+.image-clip-right {
+    mask-image: linear-gradient(to left, rgba(0, 0, 0, 1) 50%, rgba(0, 0, 0, 0) 50%);
+    mask-size: 100% 100%;
+    mask-repeat: no-repeat;
+}
+
+.divider {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 5px;
+    height: 100%;
+    background-color: rgb(255, 255, 255);
+    cursor: ew-resize;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    user-select: none; /* 禁用文本选择 */
+	border: 1px solid rgba(0, 0, 0, 0.8); /* 外轮廓颜色和厚度 */
+	/* position: absolute;
+	width: 5px;
+	height: 100%;
+	background-color: #000;
+	cursor: ew-resize;
+	z-index: 1;
+	left: 50%; */
+}
+
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, auto);
+    gap: 10px;
+    padding: 10px;
+}
+
+.comparison-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.comparison-image {
+    position: relative;
+    width: 100%;
+    height: 400px; /* Adjust height as needed */
+    overflow: hidden;
+}
+
+.comparison-image img {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+	user-select: none; /* 禁用文本选择 */
+	pointer-events: none;
+}
+
+.comparison-divider {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    width: 3px;
+    background: #ffffff;
+    cursor: ew-resize;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+	box-shadow: -2px 2px 5px rgba(0, 0, 0, 0.5); /* Shadow effect */
+}
+
+.comparison-divider::before,
+.comparison-divider::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-style: solid;
+}
+
+.comparison-divider::before {
+    border-width: 10px 10px 10px 0;
+    border-color: transparent #ffffff transparent transparent;
+    left: -20px; /* Adjust positioning as needed */
+}
+
+.comparison-divider::after {
+    border-width: 10px 0 10px 10px;
+    border-color: transparent transparent transparent #ffffff;
+    right: -20px; /* Adjust positioning as needed */
+}
