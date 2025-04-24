@@ -10,14 +10,14 @@ redirect_from:
 
 
 
-<span class='anchor' id='about-me'></span>
+<span class='anchor' id='homepage'></span>
 
-# About Me 
+<!-- # About Me  -->
 I'm a Ph.D. student in computer science at the State Key Lab of CAD&CG, 
-<img src="images/logo/zju.png" alt="icon" style="height: 1em; vertical-align: middle;"> [Zhejiang University](https://www.zju.edu.cn/english/), 
+<img src="images/zju.png" alt="icon" style="height: 1em; vertical-align: middle;"> [Zhejiang University](https://www.zju.edu.cn/english/), 
 supervised by Prof. [Weiwei Xu](http://www.cad.zju.edu.cn/home/weiweixu/index.htm), co-supervised by Prof. [Rynson W.H. Lau](https://www.cs.cityu.edu.hk/~rynson/). 
 I did my undergrad at 
-<img src="images/logo/uestc.png" alt="icon" style="height: 1em; vertical-align: middle;"> [UESTC](https://en.uestc.edu.cn/).
+<img src="images/uestc.png" alt="icon" style="height: 1em; vertical-align: middle;"> [UESTC](https://en.uestc.edu.cn/).
 My research interests are 3D scene reconstruction and understanding.
 
 
@@ -37,6 +37,34 @@ My research interests are 3D scene reconstruction and understanding.
 
 # Publications
 <div class='paper-box'>
+<div class='paper-box-text' markdown="1">
+
+
+## 4D Gaussian Video with Motion Layering
+
+**Pinxuan Dai**\*, 
+Peiquan Zhang\*,
+[Zheng Dong](https://zhengdong.site/),
+[Ke Xu](https://kkbless.github.io/),
+[Yifan Peng](https://www.eee.hku.hk/~evanpeng/),
+[Dandan Ding](https://dandanding.com/),
+[Yujun Shen](https://shenyujun.github.io/),
+[Yin Yang](https://yangzzzy.github.io/),
+[Xinguo Liu](http://www.cad.zju.edu.cn/home/xgliu),
+[Rynson W.H. Lau](https://www.cs.cityu.edu.hk/~rynson/),
+[Weiwei Xu](http://www.cad.zju.edu.cn/home/weiweixu/index.htm)<sup>†</sup>
+
+
+<span class="pub">ACM Transactions on Graphics 2025</span>
+<!-- \[[Project](https://turandai.github.io/projects/gaussian_video/)\] -->
+<!-- \[[Paper](https://arxiv.org/pdf/2404.17774)\] -->
+<!-- \[[Code](https://github.com/turandai/gaussian_video)\] -->
+
+*We reconstruct high-quality, low-storage volumetric video that supports real-time streaming over the Internet.*
+</div>
+</div>
+<div class='paper-box'>
+<!-- <div class='paper-box-image'><div><img src='' alt="sym" width="100%"></div></div> -->
 <div class='paper-box-text' markdown="1">
 
 ## High-quality Surface Reconstruction using Gaussian Surfels
