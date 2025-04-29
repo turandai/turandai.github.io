@@ -30,7 +30,7 @@ My research interests are 3D scene reconstruction and understanding.
 
 **Address**: 866 Yuhangtang Road, Hangzhou, China
 
-**Email**: daipinxuan AT zju.edu.cn
+**Email**: daipinxuan [AT] zju.edu.cn
 
 
 <span class='anchor' id='publications'></span>
@@ -60,11 +60,10 @@ Peiquan Zhang\*,
 <!-- \[[Paper](https://arxiv.org/pdf/2404.17774)\] -->
 <!-- \[[Code](https://github.com/turandai/gaussian_video)\] -->
 
-*We reconstruct high-quality, low-storage volumetric video that supports real-time streaming over the Internet.*
+*We reconstruct high-quality, low-storage volumetric video that supports real-time streaming on the Internet.*
 </div>
 </div>
 <div class='paper-box'>
-<!-- <div class='paper-box-image'><div><img src='' alt="sym" width="100%"></div></div> -->
 <div class='paper-box-text' markdown="1">
 
 ## High-quality Surface Reconstruction using Gaussian Surfels
@@ -77,7 +76,6 @@ Wenxiang Xie,
 [Weiwei Xu](http://www.cad.zju.edu.cn/home/weiweixu/index.htm)<sup>†</sup>
 
 
-<!-- <span style="color: rgb(110, 140, 60);">🎀 ACM SIGGRAPH 2024</span> -->
 <span class="pub">ACM SIGGRAPH 2024</span>
 \[[Project](https://turandai.github.io/projects/gaussian_surfels/)\]
 \[[Paper](https://arxiv.org/pdf/2404.17774)\]
@@ -87,7 +85,6 @@ Wenxiang Xie,
 </div>
 </div>
 <div class='paper-box'>
-<!-- <div class='paper-box-image'><div><img src='' alt="sym" width="100%"></div></div> -->
 <div class='paper-box-text' markdown="1">
 
 ## Deep Flow Rendering: View Synthesis via Layer-aware Reflection Flow
