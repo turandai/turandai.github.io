@@ -62,11 +62,11 @@
   /* Fading animation */
   .fade {
 	animation-name: fade;
-	animation-duration: 1.5s;
+	animation-duration: 0.5s;
   }
   
   @keyframes fade {
-	from {opacity: .4}
+	from {opacity: .0}
 	to {opacity: 1}
   }
 
@@ -97,6 +97,23 @@ video_name {
     font-size: 16px;
 }
 
+
+.caption-container {
+  text-align: center;
+  background-color: rgb(255, 255, 255);
+  padding: 0px 0px;
+  color: rgb(0, 0, 0);
+}
+/* .row {
+  display: flex;
+  justify-content: center;
+} */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+  /* margin: 0 auto; */
+}
 
 .image2-container {
     display: flex;
@@ -129,6 +146,21 @@ video_name {
 	display: none;
 	overflow: hidden;
   }
+
+  .demo {
+    opacity: 0.3;
+  }
+  
+    
+  .active,
+  .demo:hover {
+  opacity: 1;
+  }
+
+   /* Add a pointer when hovering over the thumbnail images */
+   .cursor {
+    cursor: pointer;
+    }
   
   /* Next & previous buttons */
   .prev, .next {
