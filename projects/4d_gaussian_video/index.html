@@ -1,0 +1,889 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="description"
+        content="descriptions">
+  <meta name="keywords" content="keywords">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>4D Gaussian Video</title>
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script> -->
+  <!-- <meta name="google-site-verification" content="DM3NGsK5CfRuZPtync3hP0EUCJJb_oFfAl_czOaK-PE" /> -->
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+
+    gtag('js', new Date());
+
+    gtag('config', 'G-PYVRSFMDRL');
+  </script>
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+        rel="stylesheet">
+
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet" href="./static/css/glab.css">
+
+  <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous"> -->
+  <!-- <link rel="stylesheet" href="js/dics/dics.original.css">
+  <script src="js/dics/dics.original.js"></script>
+  <script src="js/event_handler.js"></script> -->
+  <!-- <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:300,400,500,600,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Inconsolata:300,400,500,600,700" rel="stylesheet"> -->
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+  <!-- <link rel="icon" href="./static/images/favicon.svg"> -->
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <!-- <script src="./static/js/bulma-slider.min.js"></script> -->
+  <!-- <script src="./static/js/index.js"></script> -->
+  <script src="./static/js/slides.js"></script>
+</head>
+<body>
+
+<!-- <nav class="navbar" role="navigation" aria-label="main navigation">
+  <div class="navbar-brand">
+    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+    </a>
+  </div>
+  <div class="navbar-menu">
+    <div class="navbar-start" style="flex-grow: 1; justify-content: center;">
+      <a class="navbar-item" href="https://keunhong.com">
+      <span class="icon">
+          <i class="fas fa-home"></i>
+      </span>
+      </a>
+
+      <div class="navbar-item has-dropdown is-hoverable">
+        <a class="navbar-link">
+          More Research
+        </a>
+        <div class="navbar-dropdown">
+          <a class="navbar-item" href="https://hypernerf.github.io">
+            HyperNeRF
+          </a>
+          <a class="navbar-item" href="https://nerfies.github.io">
+            Nerfies
+          </a>
+          <a class="navbar-item" href="https://latentfusion.github.io">
+            LatentFusion
+          </a>
+          <a class="navbar-item" href="https://photoshape.github.io">
+            PhotoShape
+          </a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</nav> -->
+
+
+<section class="hero">
+  <div class="hero-body" style="padding-bottom: 0;">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+
+          <!-- <h1 class="title is-1 publication-title" style="font-size: 30px; font-weight: bold">
+            
+          </h1> -->
+          <h2 class="title is-3">4D Gaussian Video with Motion Layering</h2>
+          <h2 class="conference">ACM SIGGRAPH 2025 (Journal Track)</h2>
+          <div class="is-size-6 publication-authors" style="width: 65%; margin: 0 auto; text-align: center;">
+            <span class="author-block">
+              <a href="https://turandai.github.io/">Pinxuan Dai</a><sup>1*</sup>,</span>
+            <span class="author-block">
+              <a href="">Peiquan Zhang</a><sup>1*</sup>,</span>
+            <span class="author-block">
+              <a href="https://zhengdong.site/">Zheng Dong</a><sup>1</sup>,
+            </span>
+            <span class="author-block">
+              <a href="https://kkbless.github.io/">Ke Xu</a><sup>2</sup>,
+            </span>
+            <span class="author-block">
+              <a href="https://www.eee.hku.hk/~evanpeng/">Yifan Peng</a><sup>3</sup>,
+            </span>
+          <!-- </br> -->
+            <span class="author-block">
+              <a href="https://dandanding.com/">Dandan Ding</a><sup>4</sup>,
+            </span>
+            <span class="author-block">
+              <a href="https://shenyujun.github.io/">Yujun Shen</a><sup>5</sup>,
+            </span>
+            <span class="author-block">
+              <a href="https://yangzzzy.github.io/">Yin Yang</a><sup>6</sup>,
+            </span>
+            <span class="author-block">
+              <a href="http://www.cad.zju.edu.cn/home/xgliu/">Xinguo Liu</a><sup>1</sup>,
+            </span>
+            <span class="author-block">
+              <a href="https://www.cs.cityu.edu.hk/~rynson/">Rynson W.H. Lau</a><sup>2<sup></sup></sup>
+            </span>
+            <span class="author-block">
+              <a href="http://www.cad.zju.edu.cn/home/weiweixu/index.htm">Weiwei Xu</a><sup>1<sup>†</sup></sup>,
+            </span>
+          </div>
+
+          <!-- <div class="is-size-6 publication-authors">
+            <span class="author-block"><sup>*</sup>Joint first authors; </span>
+            <span class="author-block"><sup>†</sup>Corresponding author</span>
+          </div> -->
+
+          <div class="is-size-6 publication-authors" style="width: 70%; margin: 0 auto; text-align: center;">
+            <span class="author-block"><sup>1</sup> <img src="./static/images/logo/zju1.jpg" alt="icon" style="height: 1em; vertical-align: middle;"> Zhejiang University, </span>
+            <span class="author-block"><sup>2</sup> <img src="./static/images/logo/cityu.jpg" alt="icon" style="height: 1em; vertical-align: middle;"> City University of Hong Kong, </span>
+            <span class="author-block"><sup>3</sup> <img src="./static/images/logo/hku.jpg" alt="icon" style="height: 1em; vertical-align: middle;"> The University of Hong Kong, </span>
+          <!-- </br> -->
+            <span class="author-block"><sup>4</sup> <img src="./static/images/logo/hnu.jpg" alt="icon" style="height: 1em; vertical-align: middle;"> Hangzhou Normal University, </span>
+            <span class="author-block"><sup>5</sup> <img src="./static/images/logo/ant.jpg" alt="icon" style="height: 1em; vertical-align: middle;"> Ant Group, </span>
+            <span class="author-block"><sup>6</sup> <img src="./static/images/logo/utah.jpg" alt="icon" style="height: 1em; vertical-align: middle;"> The University of Utah</span>
+          </div>
+          <br/>
+          <!-- <img src="static/images/univ_logo.jpg" class="univ_logo"> -->
+          <div class="columns is-centered"   style="margin-top: -20px; margin-bottom: -30px;">
+
+            <div class="column has-text-centered">
+              <div class="publication-links">
+                <!-- PDF Link. -->
+                <span class="link-block">
+                  <a href=""
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                        <i class="fas fa-file-pdf"></i>
+                    </span>
+                    <span>Paper (coming soon)</span>
+                  </a>
+                </span>
+                <!-- <span class="link-block">
+                  <a href="https://arxiv.org/abs/2404.17774"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                        <i class="ai ai-arxiv"></i>
+                    </span>
+                    <span>arXiv</span>
+                  </a>
+                </span> -->
+                <!-- Video Link. -->
+                <!-- <span class="link-block">
+                  <a href=""
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                        <i class="fab fa-youtube"></i>
+                    </span>
+                    <span>Video</span>
+                  </a>
+                </span> -->
+                <!-- Code Link. -->
+                <span class="link-block">
+                  <a href=""
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                        <i class="fab fa-github"></i>
+                    </span>
+                    <span>Code (coming soon)</span>
+                    </a>
+                </span>
+                <!-- Dataset Link. -->
+                <span class="link-block">
+                  <a href=""
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                        <i class="far fa-images"></i>
+                    </span>
+                    <span>Data (coming soon)</span>
+                    </a>
+                </span>
+
+              </div>
+
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="section">
+  <div class="container is-max-desktop">
+
+
+    <div class="columns is-centered"> <img src="static/images/teaser.jpg"> </div>
+    
+    <br/>
+    <h2 class="title is-4">Abstract</h2>
+    <div class="content has-text-justified">
+      <p>
+        Online free-view navigation in volumetric videos requires high-quality rendering and real-time streaming in order to provide immersive user experiences.
+        However, existing methods may not handle dynamic scenes with complex motions, and their models (e.g., dynamic NeRF and 3DGS) may not be streamable due to storage and bandwidth constraints.
+        In this paper, we propose a novel 4D Gaussian Video (4DGV) approach that enables the creation and streaming of photorealistic, volumetric videos for dynamic scenes over the Internet.
+        The core of our 4DGV is a novel streamable group of Gaussians (GOG) representation based on motion layering. Each GOG consists of static and dynamic points obtained via lifting 2D segmentation into 3D in motion layering, where the deformation of each dynamic point is represented as the temporal offset of its attributes. 
+        We also adaptively convert static points back to dynamic points to handle the appearance change, (e.g. moving shadows and reflections), of static objects through optimization. To support real-time streaming of 4DGV, we show that by applying quantization on Gaussian attributes and H.265 encoding on deformation offsets, our GOG representation can be significantly compressed (to around 6% of the original model size) without sacrificing the accuracy (PSNR loss less than 0.01dB).
+        Extensive experiments on standard benchmarks demonstrate that our method outperforms state-of-the-art volumetric video approaches, with superior rendering quality and minimum storage overheads. 
+      </p>
+    </div>
+    <br/>
+
+    <!-- <h2 class="title is-4">Web Player</h2>
+    <div class="content has-text-justified">
+      <p>
+        xxx
+      </p>
+    </div> -->
+    <!-- <video autoplay muted loop playsinline height="10%">
+      <source src="./static/videos/result_dtu.mp4"
+              type="video/mp4">
+    </video> -->
+
+    <h2 class="title is-4">Reconstruction Results</h2>
+    <div class="content has-text-justified">
+      <p>
+        Real-time free-viewpoint rendering of 4DGV.
+      </p>
+    </div>
+
+    <div class="slideshow-container">
+
+      <div class="mySlides1 fade">
+        <video src="./static/videos/long/cube_long.mp4" autoplay controls loop muted playsinline style="transform: scale(1.0);"></video>
+      </div>
+      <div class="mySlides1 fade">
+        <video src="./static/videos/long/flame_salmon_long.mp4" autoplay controls loop muted playsinline style="transform: scale(1.0);"></video>
+      </div>
+      <div class="mySlides1 fade">
+        <video src="./static/videos/long/alex1_long.mp4" autoplay controls loop muted playsinline style="transform: scale(1.0);"></video>
+      </div>
+      <div class="mySlides1 fade">
+        <video src="./static/videos/long/model_walk_new.mp4" autoplay controls loop muted playsinline style="transform: scale(1.0);"></video>
+      </div>
+    
+      <a class="prev" onclick="plusSlides(1, -1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1, 1)">&#10095;</a>
+
+      <div style="text-align:center; margin-top: 0px;">
+        <span class="dot1" onclick="currentSlide(1, 1)"></span>
+        <span class="dot1" onclick="currentSlide(1, 2)"></span>
+        <span class="dot1" onclick="currentSlide(1, 3)"></span>
+        <span class="dot1" onclick="currentSlide(1, 4)"></span>
+      </div>
+    </div>
+
+    
+    <br/>
+    <div class="columns is-centered">
+      <div class="column is-full-width">
+        <h2 class="title is-4">Overview</h2>
+
+        <!-- Interpolating. -->
+        <!-- <h3 class="title is-4">Interpolation</h3> -->
+        <div class="content has-text-justified">
+          <!-- <p>
+            xxx
+          </p> -->
+
+            <img src="static/images/pipeline.jpg">
+  
+            <div class="content has-text-justified">
+              <p>
+                <span style="font-weight: bold;">4DGV Overview. </span>
+                We take a multi-view video as input and employ the 4DGV representation to transform each group of input frames into a group of Gaussians (GOG). The process involves the following stages:
+                <span style="color: rgb(122, 181, 86);">(a) Gaussian point initialization</span> learns to establish static Gaussian point clouds as initialization at each keyframe timestamp.
+                <span style="color: rgb(224, 189, 92);">(b) Motion layering initialization</span> separates dynamic and static points, enabling static points to be shared across multiple groups.
+                <span style="color: rgb(129, 161, 216);">(c) GOG reconstruction</span> learns to deform dynamic points for modeling scene dynamics within each frame group. The points deformed to the next keyframe timestamp serve as initialization for the subsequent group.
+                We further leverage the H.265 codec to encode time-dependent point deformations as multiple MP4 tracks for efficient compression.
+                Finally, the reconstructed GOGs are consolidated for seamless real-time streaming.
+              </p>
+            </div>
+
+        </div>
+
+      </div>
+    </div>
+
+
+
+
+    <h2 class="title is-4">Motion Layering</h2>
+    <div class="content has-text-justified">
+      <p>
+        Adaptive dynamic/static point separation.
+      </p>
+    </div>
+    <div class="columns is-centered">
+      <!-- Visual Effects. -->
+      <div class="column is-full-width">
+        <div class="content">
+
+
+          <div class="columns is-centered is-mobile">
+
+            <div class="column is-full-width">
+              <div id="motion2" class="bal-container-small">
+              
+                <div class="bal-before">
+                  <div class="bal-before-inset">
+                    <video id="video20" autoplay muted loop playsinline height="10%" style="width: 100%; height: 100%; object-fit: cover">
+                      <source src="./static/videos/motion/cut_beef_ours.mp4" type="video/mp4">
+                    </video>
+                    <div class="bal-beforePosition beforeLabel">
+                      <span style="font-weight: bold;">RGB</span><div></div>
+                    </div>
+                  </div>
+                </div>
+
+
+                <div class="bal-after">
+                  <video id="video21" autoplay muted loop playsinline height="10%" style="width: 100%; height: 100%; object-fit: cover">
+                    <source src="./static/videos/motion/cut_beef_ours_motion.mp4" type="video/mp4">
+                  </video>
+                  <div class="bal-afterPosition afterLabel">
+                    <span style="font-weight: bold;">Motion Label</span><div></div>
+                  </div>
+                </div>
+
+                <div class="bal-handle">
+                  <span class=" handle-left-arrow"></span>
+                  <span class="handle-right-arrow"></span>
+                </div>
+                
+
+              </div>
+
+            </div>
+
+            <div class="column is-full-width">
+                
+              <div id="motion3" class="bal-container-small">
+                <div class="bal-before">
+                  <div class="bal-before-inset">
+                    <video id="video30" autoplay muted loop playsinline style="width: 120%; height: 120%; object-fit: cover; transform: translateY(-10%);">
+                      <source src="./static/videos/motion/discussion_ours.mp4" type="video/mp4">
+                    </video>
+                    <div class="bal-beforePosition beforeLabel">
+                      <span style="font-weight: bold;">RGB</span><div></div>
+                    </div>
+                  </div>
+                </div>
+
+
+                <div class="bal-after">
+                  <video id="video31" autoplay muted loop playsinline style="width: 120%; height: 120%; object-fit: cover; transform: translateY(-10%);">
+                    <source src="./static/videos/motion/discussion_ours_motion.mp4" type="video/mp4">
+                  </video>
+                  <div class="bal-afterPosition afterLabel">
+                    <span style="font-weight: bold;">Motion Label</span><div></div>
+                  </div>
+                </div>
+
+                <div class="bal-handle">
+                  <span class=" handle-left-arrow"></span>
+                  <span class="handle-right-arrow"></span>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="columns is-centered is-mobile">
+
+            <div class="column is-full-width">
+              <div id="motion0" class="bal-container-small">
+              
+                <div class="bal-before">
+                  <div class="bal-before-inset">
+                    <video id="video00" autoplay muted loop playsinline style="width: 120%; height: 120%; object-fit: cover">
+                      <source src="./static/videos/motion/dominos_ours.mp4" type="video/mp4">
+                    </video>
+                    <div class="bal-beforePosition beforeLabel">
+                      <span style="font-weight: bold;">RGB</span><div></div>
+                    </div>
+                  </div>
+                </div>
+
+
+                <div class="bal-after">
+                  <video id="video01" autoplay muted loop playsinline style="width: 120%; height: 120%; object-fit: cover">
+                    <source src="./static/videos/motion/dominos_ours_motion.mp4" type="video/mp4">
+                  </video>
+                  <div class="bal-afterPosition afterLabel">
+                    <span style="font-weight: bold;">Motion Label</span><div></div>
+                  </div>
+                </div>
+
+                <div class="bal-handle">
+                  <span class=" handle-left-arrow"></span>
+                  <span class="handle-right-arrow"></span>
+                </div>
+                
+
+              </div>
+
+            </div>
+
+            <div class="column is-full-width">
+              <div id="motion1" class="bal-container-small">
+              
+                <div class="bal-before">
+                  <div class="bal-before-inset">
+                    <video id="video10" autoplay muted loop playsinline height="10%" style="width: 100%; height: 100%; object-fit: cover">
+                      <source src="./static/videos/motion/bar_ours.mp4" type="video/mp4">
+                    </video>
+                    <div class="bal-beforePosition beforeLabel">
+                      <span style="font-weight: bold;">RGB</span><div></div>
+                    </div>
+                  </div>
+                </div>
+
+
+                <div class="bal-after">
+                  <video id="video11" autoplay muted loop playsinline height="10%" style="width: 100%; height: 100%; object-fit: cover">
+                    <source src="./static/videos/motion/bar_ours_motion.mp4" type="video/mp4">
+                  </video>
+                  <div class="bal-afterPosition afterLabel">
+                    <span style="font-weight: bold;">Motion Label</span><div></div>
+                  </div>
+                </div>
+
+                <div class="bal-handle">
+                  <span class=" handle-left-arrow"></span>
+                  <span class="handle-right-arrow"></span>
+                </div>
+                
+
+              </div>
+
+            </div>
+
+          </div>
+          
+        </div>
+      </div>
+      
+    </div>
+  
+
+    <br/>
+    <h2 class="title is-4">Comparison</h2>
+    <div class="content has-text-justified">
+      <p>
+        Comparisons on the Neu3DV, MeetRoom, Technicolor, and our self-captured DeskGames datasets.
+      </p>
+    </div>
+
+    <div class="slideshow-container">
+
+      <div class="mySlides0 fade">
+        <video src="./static/videos/compare/theater_cmp.mp4" autoplay loop muted playsinline style="transform: scale(1.1);"></video>
+      </div>
+      <div class="mySlides0 fade">
+        <video src="./static/videos/compare/vrheadset_cmp.mp4" autoplay loop muted playsinline style="transform: scale(1.1);"></video>
+      </div>
+      <div class="mySlides0 fade">
+        <video src="./static/videos/compare/birthday_cmp.mp4" autoplay loop muted playsinline style="transform: scale(1.1);"></video>
+      </div>
+      <div class="mySlides0 fade">
+        <video src="./static/videos/compare/reading_cmp.mp4" autoplay loop muted playsinline style="transform: scale(1.1);"></video>
+      </div>
+      <div class="mySlides0 fade">
+        <video src="./static/videos/compare/stepin_cmp.mp4" autoplay loop muted playsinline style="transform: scale(1.1);"></video>
+      </div>
+      <div class="mySlides0 fade">
+        <video src="./static/videos/compare/cube_cmp.mp4" autoplay loop muted playsinline style="transform: scale(1.1);"></video>
+      </div>
+      <div class="mySlides0 fade">
+        <video src="./static/videos/compare/cook_spinach_cmp.mp4" autoplay loop muted playsinline style="transform: scale(1.1);"></video>
+      </div>
+      <div class="mySlides0 fade">
+        <video src="./static/videos/compare/painter_cmp.mp4" autoplay loop muted playsinline style="transform: scale(1.1);"></video>
+      </div>
+    
+      <a class="prev" onclick="plusSlides(0, -1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(0, 1)">&#10095;</a>
+
+      <div style="text-align:center; margin-top: 0px;">
+        <span class="dot0" onclick="currentSlide(0, 1)"></span>
+        <span class="dot0" onclick="currentSlide(0, 2)"></span>
+        <span class="dot0" onclick="currentSlide(0, 3)"></span>
+        <span class="dot0" onclick="currentSlide(0, 4)"></span>
+        <span class="dot0" onclick="currentSlide(0, 5)"></span>
+        <span class="dot0" onclick="currentSlide(0, 6)"></span>
+        <span class="dot0" onclick="currentSlide(0, 7)"></span>
+        <span class="dot0" onclick="currentSlide(0, 8)"></span>
+      </div>
+    </div>
+
+
+
+    <!-- <div class="columns is-centered">
+      <div class="column is-full-width">
+        <div class="content">
+
+
+
+          <div class="columns is-centered is-mobile">
+
+            <div class="column is-full-width">
+              <div id="compare2" class="bal-container-small">
+              
+                <div class="bal-before">
+                  <div class="bal-before-inset">
+                    <video id="video20" autoplay muted loop playsinline height="10%" style="width: 100%; height: 100%; object-fit: cover">
+                      <source src="./static/videos/birthday_ours.mp4" type="video/mp4">
+                    </video>
+                    <div class="bal-beforePosition beforeLabel">
+                      <span style="font-weight: bold;">Ours</span><div>88MB</div>
+                    </div>
+                  </div>
+                </div>
+
+
+                <div class="bal-after">
+                  <video id="video21" autoplay muted loop playsinline height="10%" style="width: 100%; height: 100%; object-fit: cover">
+                    <source src="./static/videos/birthday_ex4dgs.mp4" type="video/mp4">
+                  </video>
+                  <div class="bal-afterPosition afterLabel">
+                    <span style="font-weight: bold;">Ex4DGS</span><div>608MB</div>
+                  </div>
+                </div>
+
+                <div class="bal-handle">
+                  <span class=" handle-left-arrow"></span>
+                  <span class="handle-right-arrow"></span>
+                </div>
+                
+
+              </div>
+
+            </div>
+
+            <div class="column is-full-width">
+                
+              <div id="compare3" class="bal-container-small">
+                <div class="bal-before">
+                  <div class="bal-before-inset">
+                    <video id="video30" autoplay muted loop playsinline height="10%" style="width: 100%; height: 100%; object-fit: cover">
+                      <source src="./static/videos/painter_ours.mp4" type="video/mp4">
+                    </video>
+                    <div class="bal-beforePosition beforeLabel">
+                      <span style="font-weight: bold;">Ours</span><div>34MB</div>
+                    </div>
+                  </div>
+                </div>
+
+
+                <div class="bal-after">
+                  <video id="video31" autoplay muted loop playsinline height="10%" style="width: 100%; height: 100%; object-fit: cover">
+                    <source src="./static/videos/painter_3dgstream.mp4" type="video/mp4">
+                  </video>
+                  <div class="bal-afterPosition afterLabel">
+                    <span style="font-weight: bold;">3DGStream</span><div>2956MB</div>
+                  </div>
+                </div>
+
+                <div class="bal-handle">
+                  <span class=" handle-left-arrow"></span>
+                  <span class="handle-right-arrow"></span>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="columns is-centered is-mobile">
+
+            <div class="column is-full-width">
+              <div id="compare0" class="bal-container-small">
+              
+                <div class="bal-before">
+                  <div class="bal-before-inset">
+                    <video id="video00" autoplay muted loop playsinline style="width: 110%; height: 110%; object-fit: cover; transform: translateY(-10%);">
+                      <source src="./static/videos/cook_spinach_ours.mp4" type="video/mp4">
+                    </video>
+                    <div class="bal-beforePosition beforeLabel">
+                      <span style="font-weight: bold;">Ours</span><div>25MB</div>
+                    </div>
+                  </div>
+                </div>
+
+
+                <div class="bal-after">
+                  <video id="video01" autoplay muted loop playsinline style="width: 110%; height: 110%; object-fit: cover; transform: translateY(-10%);">
+                    <source src="./static/videos/cook_spinach_4dgs.mp4" type="video/mp4">
+                  </video>
+                  <div class="bal-afterPosition afterLabel">
+                    <span style="font-weight: bold;">4DGS</span><div>2061MB</div>
+                  </div>
+                </div>
+
+                <div class="bal-handle">
+                  <span class=" handle-left-arrow"></span>
+                  <span class="handle-right-arrow"></span>
+                </div>
+                
+
+              </div>
+
+            </div>
+
+            <div class="column is-full-width">
+                
+              <div id="compare1" class="bal-container-small">
+                <div class="bal-before">
+                  <div class="bal-before-inset">
+                    <video id="video10" autoplay muted loop playsinline style="width: 120%; height: 120%; object-fit: cover; transform: translateY(-10%);">
+                      <source src="./static/videos/vrheadset_ours.mp4" type="video/mp4">
+                    </video>
+                    <div class="bal-beforePosition beforeLabel">
+                      <span style="font-weight: bold;">Ours</span><div>16MB</div>
+                    </div>
+                  </div>
+                </div>
+
+
+                <div class="bal-after">
+                  <video id="video11" autoplay muted loop playsinline style="width: 120%; height: 120%; object-fit: cover; transform: translateY(-10%);">
+                    <source src="./static/videos/vrheadset_stg.mp4" type="video/mp4">
+                  </video>
+                  <div class="bal-afterPosition afterLabel">
+                    <span style="font-weight: bold;">STG</span><div>73MB</div>
+                  </div>
+                </div>
+
+                <div class="bal-handle">
+                  <span class=" handle-left-arrow"></span>
+                  <span class="handle-right-arrow"></span>
+                </div>
+              </div>
+            </div>
+
+          </div>
+          
+        </div>
+      </div>
+      
+    </div> -->
+
+
+
+    
+    <br/>
+    <div class="columns is-centered">
+      <div class="column is-full-width">
+        <h2 class="title is-4">Related Work</h2>
+
+        <div class="content has-text-justified">
+          <p style="font-size: 90%;">
+            <a href="https://ingra14m.github.io/Deformable-Gaussians/">[Yang et al. 2024]</a> Deformable 3D Gaussians for High-Fidelity Monocular Dynamic Scene Reconstruction.
+          </p> 
+          <p style="font-size: 90%;">
+            <a href="https://fudan-zvg.github.io/4d-gaussian-splatting/">[Yang et al. 2024]</a> Real-time Photorealistic Dynamic Scene Representation and Rendering with 4D Gaussian Splatting.
+          </p> 
+          <p style="font-size: 90%;">
+            <a href="https://sjojok.top/3dgstream/">[Sun et al. 2024]</a> 3DGStream: On-the-Fly Training of 3D Gaussians for Efficient Streaming of Photo-Realistic Free-Viewpoint Videos.
+          </p> 
+          <p style="font-size: 90%;">
+            <a href="https://jiaweixu8.github.io/Grid4D-web/">[Xu et al. 2024]</a> Grid4D: 4D Decomposed Hash Encoding for High-Fidelity Dynamic Gaussian Splatting.
+          </p> 
+          <p style="font-size: 90%;">
+            <a href="https://oppo-us-research.github.io/SpacetimeGaussians-website/">[Li et al. 2024]</a> Spacetime Gaussian Feature Splatting for Real-Time Dynamic View Synthesis.
+          </p> 
+          <p style="font-size: 90%;">
+            <a href="https://leejunoh.com/Ex4DGS/">[Lee et al. 2024]</a> Fully Explicit Dynamic Gaussian Splatting.
+          </p> 
+          <p style="font-size: 90%;">
+            <a href="https://authoritywang.github.io/v3/">[Wang et al. 2024]</a> V<sup>3</sup>: Viewing Volumetric Videos on Mobiles via Streamable 2D Dynamic Gaussians.
+          </p> 
+          <p style="font-size: 90%;">
+            <a href="https://zju3dv.github.io/longvolcap/">[Xu et al. 2024]</a> Representing Long Volumetric Video with Temporal Gaussian Hierarchy.
+          </p> 
+        </div>
+      </div>
+    </div>
+    <!--/ Concurrent Work. -->
+
+  </div>
+</section>
+
+
+<section class="section" id="BibTeX">
+  <div class="container is-max-desktop content">
+    <h2 class="title is-4">BibTeX</h2>
+    <!-- <pre><code>@inproceedings{Dai2024GaussianSurfels,
+  author = {Dai, Pinxuan and Xu, Jiamin and Xie, Wenxiang and Liu, Xinguo and Wang, Huamin and Xu, Weiwei},
+  title = {High-quality Surface Reconstruction using Gaussian Surfels},
+  publisher = {Association for Computing Machinery},
+  booktitle = {ACM SIGGRAPH 2024 Conference Papers},
+  year = {2024},
+  articleno = {22},
+  numpages = {11}
+}</code></pre> -->
+  </div>
+</section>
+
+
+<footer class="footer">
+  <div class="container">
+    <div class="columns is-centered">
+        <p>
+          This page is modified from the <a href="https://github.com/nerfies/nerfies.github.io">Nerfies</a> template.
+        </p>
+    </div>
+  </div>
+</footer>
+
+<script src="static/js/script.js"></script>
+<script>
+    new BeforeAfter({
+        id: '#motion0'
+    });
+    new BeforeAfter({
+        id: '#motion1'
+    });
+    new BeforeAfter({
+        id: '#motion2'
+    });
+    new BeforeAfter({
+        id: '#motion3'
+    });
+    // new BeforeAfter({
+    //     id: '#compare4'
+    // });
+    // new BeforeAfter({
+    //     id: '#compare5'
+    // });
+    // new BeforeAfter({
+    //     id: '#compare6'
+    // });
+    // new BeforeAfter({
+    //     id: '#compare7'
+    // });
+    // new BeforeAfter({
+    //     id: '#compare8'
+    // });
+    // new BeforeAfter({
+    //     id: '#compare9'
+    // });
+    const video00 = document.getElementById("video00");
+    const video01 = document.getElementById("video01");
+    // Synchronize video start time
+    video00.onplay = () => {
+      if (video01.paused) {
+        video01.currentTime = video00.currentTime; // Align start time
+        video01.play(); // Play the second video when the first one starts
+      }
+    };
+    // Synchronize video pause and playback
+    video00.ontimeupdate = () => {
+      if (Math.abs(video00.currentTime - video01.currentTime) > 0.1) {
+        video01.currentTime = video00.currentTime; // Align the current time to keep them in sync
+      }
+    };
+
+    const video10 = document.getElementById("video10");
+    const video11 = document.getElementById("video11");
+    // Synchronize video start time
+    video10.onplay = () => {
+      if (video11.paused) {
+        video11.currentTime = video10.currentTime; // Align start time
+        video11.play(); // Play the second video when the first one starts
+      }
+    };
+    // Synchronize video pause and playback
+    video10.ontimeupdate = () => {
+      if (Math.abs(video10.currentTime - video11.currentTime) > 0.1) {
+        video11.currentTime = video10.currentTime; // Align the current time to keep them in sync
+      }
+    };
+
+    const video20 = document.getElementById("video20");
+    const video21 = document.getElementById("video21");
+    // Synchronize video start time
+    video20.onplay = () => {
+      if (video21.paused) {
+        video21.currentTime = video20.currentTime; // Align start time
+        video21.play(); // Play the second video when the first one starts
+      }
+    };
+    // Synchronize video pause and playback
+    video20.ontimeupdate = () => {
+      if (Math.abs(video20.currentTime - video21.currentTime) > 0.1) {
+        video21.currentTime = video20.currentTime; // Align the current time to keep them in sync
+      }
+    };
+
+    const video30 = document.getElementById("video30");
+    const video31 = document.getElementById("video31");
+    // Synchronize video start time
+    video30.onplay = () => {
+      if (video31.paused) {
+        video31.currentTime = video30.currentTime; // Align start time
+        video31.play(); // Play the second video when the first one starts
+      }
+    };
+    // Synchronize video pause and playback
+    video30.ontimeupdate = () => {
+      if (Math.abs(video30.currentTime - video31.currentTime) > 0.1) {
+        video31.currentTime = video30.currentTime; // Align the current time to keep them in sync
+      }
+    };
+    
+    // const video40 = document.getElementById("video40");
+    // const video41 = document.getElementById("video41");
+    // Synchronize video start time
+    // video40.onplay = () => {
+    //   if (video41.paused) {
+    //     video41.currentTime = video40.currentTime; // Align start time
+    //     video41.play(); // Play the second video when the first one starts
+    //   }
+    // };
+    // // Synchronize video pause and playback
+    // video40.ontimeupdate = () => {
+    //   if (Math.abs(video40.currentTime - video41.currentTime) > 0.1) {
+    //     video41.currentTime = video40.currentTime; // Align the current time to keep them in sync
+    //   }
+    // };
+
+    // const video50 = document.getElementById("video50");
+    // const video51 = document.getElementById("video51");
+    // // Synchronize video start time
+    // video50.onplay = () => {
+    //   if (video51.paused) {
+    //     video51.currentTime = video50.currentTime; // Align start time
+    //     video51.play(); // Play the second video when the first one starts
+    //   }
+    // };
+    // // Synchronize video pause and playback
+    // video50.ontimeupdate = () => {
+    //   if (Math.abs(video50.currentTime - video51.currentTime) > 0.1) {
+    //     video51.currentTime = video50.currentTime; // Align the current time to keep them in sync
+    //   }
+    // };
+</script>
+
+<script>
+  showSlides(0, 1)
+  showSlides(1, 1)
+</script>
+
+</body>
+</html>
