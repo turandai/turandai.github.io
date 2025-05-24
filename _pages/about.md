@@ -56,7 +56,7 @@ Peiquan Zhang\*,
 
 
 <span class="pub">ACM Transactions on Graphics 2025</span>
-<!-- \[[Project](https://turandai.github.io/projects/gaussian_video/)\] -->
+\[[Project](https://turandai.github.io/projects/4d_gaussian_video/)\]
 <!-- \[[Paper](https://arxiv.org/pdf/2404.17774)\] -->
 <!-- \[[Code](https://github.com/turandai/gaussian_video)\] -->
 
