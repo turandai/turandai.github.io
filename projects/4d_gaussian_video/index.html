@@ -362,7 +362,7 @@
         <div class="content">
 
 
-          <div class="columns is-centered is-mobile">
+          <!-- <div class="columns is-centered is-mobile">
 
             <div class="column is-full-width">
               <div id="motion2" class="bal-container-small">
@@ -429,7 +429,7 @@
               </div>
             </div>
 
-          </div>
+          </div> -->
 
           <div class="columns is-centered is-mobile">
 
@@ -513,7 +513,7 @@
     <h2 class="title is-4">Comparison</h2>
     <div class="content has-text-justified">
       <p>
-        Video comparisons on the Neu3DV, MeetRoom, Technicolor, and our self-captured DeskGames datasets.
+        Video comparisons on public datasets (more results <a href="https://www.bilibili.com/video/BV1BXjtzBEQh/">here</a>).
       </p>
     </div>
 
@@ -534,7 +534,7 @@
       <div class="mySlides0 fade">
         <video src="./static/videos/compare/stepin_cmp.mp4" autoplay loop muted playsinline style="transform: scale(1.1);"></video>
       </div>
-      <div class="mySlides0 fade">
+      <!-- <div class="mySlides0 fade">
         <video src="./static/videos/compare/cube_cmp.mp4" autoplay loop muted playsinline style="transform: scale(1.1);"></video>
       </div>
       <div class="mySlides0 fade">
@@ -542,7 +542,7 @@
       </div>
       <div class="mySlides0 fade">
         <video src="./static/videos/compare/painter_cmp.mp4" autoplay loop muted playsinline style="transform: scale(1.1);"></video>
-      </div>
+      </div> -->
     
       <a class="prev" onclick="plusSlides(0, -1)">&#10094;</a>
       <a class="next" onclick="plusSlides(0, 1)">&#10095;</a>
@@ -553,9 +553,9 @@
         <span class="dot0" onclick="currentSlide(0, 3)"></span>
         <span class="dot0" onclick="currentSlide(0, 4)"></span>
         <span class="dot0" onclick="currentSlide(0, 5)"></span>
-        <span class="dot0" onclick="currentSlide(0, 6)"></span>
+        <!-- <span class="dot0" onclick="currentSlide(0, 6)"></span>
         <span class="dot0" onclick="currentSlide(0, 7)"></span>
-        <span class="dot0" onclick="currentSlide(0, 8)"></span>
+        <span class="dot0" onclick="currentSlide(0, 8)"></span> -->
       </div>
     </div>
 
@@ -836,73 +836,41 @@
       }
     };
     // Synchronize video pause and playback
-    video10.ontimeupdate = () => {
-      if (Math.abs(video10.currentTime - video11.currentTime) > 0.1) {
-        video11.currentTime = video10.currentTime; // Align the current time to keep them in sync
-      }
-    };
-
-    const video20 = document.getElementById("video20");
-    const video21 = document.getElementById("video21");
-    // Synchronize video start time
-    video20.onplay = () => {
-      if (video21.paused) {
-        video21.currentTime = video20.currentTime; // Align start time
-        video21.play(); // Play the second video when the first one starts
-      }
-    };
-    // Synchronize video pause and playback
-    video20.ontimeupdate = () => {
-      if (Math.abs(video20.currentTime - video21.currentTime) > 0.1) {
-        video21.currentTime = video20.currentTime; // Align the current time to keep them in sync
-      }
-    };
-
-    const video30 = document.getElementById("video30");
-    const video31 = document.getElementById("video31");
-    // Synchronize video start time
-    video30.onplay = () => {
-      if (video31.paused) {
-        video31.currentTime = video30.currentTime; // Align start time
-        video31.play(); // Play the second video when the first one starts
-      }
-    };
-    // Synchronize video pause and playback
-    video30.ontimeupdate = () => {
-      if (Math.abs(video30.currentTime - video31.currentTime) > 0.1) {
-        video31.currentTime = video30.currentTime; // Align the current time to keep them in sync
-      }
-    };
-    
-    // const video40 = document.getElementById("video40");
-    // const video41 = document.getElementById("video41");
-    // Synchronize video start time
-    // video40.onplay = () => {
-    //   if (video41.paused) {
-    //     video41.currentTime = video40.currentTime; // Align start time
-    //     video41.play(); // Play the second video when the first one starts
-    //   }
-    // };
-    // // Synchronize video pause and playback
-    // video40.ontimeupdate = () => {
-    //   if (Math.abs(video40.currentTime - video41.currentTime) > 0.1) {
-    //     video41.currentTime = video40.currentTime; // Align the current time to keep them in sync
+    // video10.ontimeupdate = () => {
+    //   if (Math.abs(video10.currentTime - video11.currentTime) > 0.1) {
+    //     video11.currentTime = video10.currentTime; // Align the current time to keep them in sync
     //   }
     // };
 
-    // const video50 = document.getElementById("video50");
-    // const video51 = document.getElementById("video51");
+    // const video20 = document.getElementById("video20");
+    // const video21 = document.getElementById("video21");
     // // Synchronize video start time
-    // video50.onplay = () => {
-    //   if (video51.paused) {
-    //     video51.currentTime = video50.currentTime; // Align start time
-    //     video51.play(); // Play the second video when the first one starts
+    // video20.onplay = () => {
+    //   if (video21.paused) {
+    //     video21.currentTime = video20.currentTime; // Align start time
+    //     video21.play(); // Play the second video when the first one starts
     //   }
     // };
     // // Synchronize video pause and playback
-    // video50.ontimeupdate = () => {
-    //   if (Math.abs(video50.currentTime - video51.currentTime) > 0.1) {
-    //     video51.currentTime = video50.currentTime; // Align the current time to keep them in sync
+    // video20.ontimeupdate = () => {
+    //   if (Math.abs(video20.currentTime - video21.currentTime) > 0.1) {
+    //     video21.currentTime = video20.currentTime; // Align the current time to keep them in sync
+    //   }
+    // };
+
+    // const video30 = document.getElementById("video30");
+    // const video31 = document.getElementById("video31");
+    // // Synchronize video start time
+    // video30.onplay = () => {
+    //   if (video31.paused) {
+    //     video31.currentTime = video30.currentTime; // Align start time
+    //     video31.play(); // Play the second video when the first one starts
+    //   }
+    // };
+    // // Synchronize video pause and playback
+    // video30.ontimeupdate = () => {
+    //   if (Math.abs(video30.currentTime - video31.currentTime) > 0.1) {
+    //     video31.currentTime = video30.currentTime; // Align the current time to keep them in sync
     //   }
     // };
 </script>
