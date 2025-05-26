@@ -18,25 +18,33 @@ function showSlides(group, n) {
   if (n > slides.length) { slideIndex = 1 }
   if (n < 1) { slideIndex = slides.length }
 
-  // Fade out current slide
+  // Fade out all slides
   for (i = 0; i < slides.length; i++) {
     slides[i].style.transition = "opacity 0.1s ease";
     slides[i].style.opacity = 0;
   }
 
-  // Delay hiding slides and showing new one
+  // After fade out, hide all and show the selected slide
   setTimeout(() => {
     for (i = 0; i < slides.length; i++) {
       slides[i].style.display = "none";
     }
 
-    slides[slideIndex - 1].style.display = "block";
-    slides[slideIndex - 1].style.opacity = 0;
-    slides[slideIndex - 1].style.transition = "opacity 0.1s ease";
+    const currentSlide = slides[slideIndex - 1];
+    currentSlide.style.display = "block";
+    currentSlide.style.opacity = 0;
+    currentSlide.style.transition = "opacity 0.1s ease";
 
-    // setTimeout(() => {
-    slides[slideIndex - 1].style.opacity = 1;
-    // }, 0);
+    // Lazy load the video
+    const video = currentSlide.querySelector("video");
+    if (video && !video.src) {
+      video.src = video.getAttribute("data-src");
+      video.load();
+      video.play();
+    }
+
+    currentSlide.style.opacity = 1;
+
   }, 100);
 
   for (i = 0; i < dots.length; i++) {
@@ -44,7 +52,6 @@ function showSlides(group, n) {
   }
   dots[slideIndex - 1].className += " active";
 }
-
 
 let videoIndex = 1;
 function changevideo(path, n)
