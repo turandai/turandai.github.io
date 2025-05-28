@@ -40,7 +40,7 @@ My research interests are 3D scene reconstruction and understanding.
 <div class='paper-box-text' markdown="1">
 
 
-## 4D Gaussian Video with Motion Layering
+## 4D Gaussian Videos with Motion Layering
 
 **Pinxuan Dai**\*, 
 Peiquan Zhang\*,
