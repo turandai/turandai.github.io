@@ -8,8 +8,6 @@ redirect_from:
   - /about.html
 ---
 
-
-
 <span class='anchor' id='homepage'></span>
 
 <!-- # About Me  -->
@@ -55,10 +53,13 @@ Peiquan Zhang\*,
 [Weiwei Xu](http://www.cad.zju.edu.cn/home/weiweixu/index.htm)<sup>†</sup>
 
 
+
 <span class="pub">ACM Transactions on Graphics 2025</span>
-\[[Project](https://turandai.github.io/projects/4d_gaussian_video/)\]
-<!-- \[[Paper](https://arxiv.org/pdf/2404.17774)\] -->
-<!-- \[[Code](https://github.com/turandai/gaussian_video)\] -->
+[
+  <a href="https://turandai.github.io/projects/4d_gaussian_video/" title="Project Page" style="color: inherit;"><i class="fas fa-link fa-sm" aria-hidden="true"></i></a>
+  / <a href="https://turandai.github.io/projects/4d_gaussian_video/sig25_4dgv_author.pdf" title="Paper" style="color: inherit;"><i class="far fa-file-pdf fa-sm" aria-hidden="true"></i></a>
+  <!-- | <a href="https://github.com/turandai/" title="Code" style="color: inherit;"><i class="fas fa-code" aria-hidden="true"></i></a> -->
+]
 
 *We reconstruct high-quality, low-storage volumetric video that supports real-time streaming on the Internet.*
 </div>
@@ -77,9 +78,11 @@ Wenxiang Xie,
 
 
 <span class="pub">ACM SIGGRAPH 2024</span>
-\[[Project](https://turandai.github.io/projects/gaussian_surfels/)\]
-\[[Paper](https://arxiv.org/pdf/2404.17774)\]
-\[[Code](https://github.com/turandai/gaussian_surfels)\]
+[
+  <a href="https://turandai.github.io/projects/gaussian_surfels/" title="Project Page" style="color: inherit;"><i class="fas fa-link fa-sm" aria-hidden="true"></i></a>
+  / <a href="https://arxiv.org/pdf/2404.17774" title="Paper" style="color: inherit;"><i class="far fa-file-pdf fa-sm" aria-hidden="true"></i></a>
+  / <a href="https://github.com/turandai/gaussian_surfels" title="Code" style="color: inherit;"><i class="fas fa-code fa-sm" aria-hidden="true"></i></a>
+]
 
 *We use Gaussian surfels as geometry primitive to reconstruct high-quality mesh surface from multi-view images.*
 </div>
@@ -92,8 +95,10 @@ Wenxiang Xie,
 **Pinxuan Dai**, [Ning Xie](http://www.xielab.cn/index.html)<sup>†</sup>
 
 <span class="pub">Computer Graphics Forum 2022</span>
-\[[Paper](https://diglib.eg.org/bitstream/handle/10.1111/cgf14593/v41i4pp139-148.pdf)\]
-\[[Code](https://github.com/turandai/dfr)\]
+[
+  <a href="https://diglib.eg.org/bitstream/handle/10.1111/cgf14593/v41i4pp139-148.pdf" title="Paper" style="color: inherit;"><i class="far fa-file-pdf fa-sm" aria-hidden="true"></i></a>
+  / <a href="https://github.com/turandai/dfr" title="Code" style="color: inherit;"><i class="fas fa-code fa-sm" aria-hidden="true"></i></a>
+]
 
 *We improve reflection synthesis on curved surfaces in image-based rendering using constrained reflection flow.*
 </div>
