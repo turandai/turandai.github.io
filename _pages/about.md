@@ -38,6 +38,7 @@ My research interests are 3D scene reconstruction and understanding.
 <div class='paper-box-text' markdown="1">
 
 
+
 ## 4D Gaussian Videos with Motion Layering
 
 **Pinxuan Dai**\*, 
@@ -62,6 +63,24 @@ Peiquan Zhang\*,
 ]
 
 *We reconstruct high-quality, low-storage volumetric video that supports real-time streaming on the Internet.*
+</div>
+</div>
+<div class='paper-box'>
+<div class='paper-box-text' markdown="1">
+
+## Neural Shell Texture Splatting: More Details and Fewer Primitives
+
+Xin Zhang, 
+[Anpei Chen](https://apchenstu.github.io/),
+Jincheng Xiong,
+**Pinxuan Dai**,
+[Yujun Shen](https://shenyujun.github.io/),
+[Weiwei Xu](http://www.cad.zju.edu.cn/home/weiweixu/index.htm)<sup>†</sup>
+
+
+<span class="pub">IEEE ICCV 2025</span>
+
+*We decouple the geometry and appearance representation of 3DGS for more efficient scene modeling.*
 </div>
 </div>
 <div class='paper-box'>
