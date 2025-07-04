@@ -72,7 +72,7 @@ Peiquan Zhang\*,
 
 Xin Zhang, 
 [Anpei Chen](https://apchenstu.github.io/),
-Jincheng Xiong,
+[Jincheng Xiong](https://venite-xjc.github.io/),
 **Pinxuan Dai**,
 [Yujun Shen](https://shenyujun.github.io/),
 [Weiwei Xu](http://www.cad.zju.edu.cn/home/weiweixu/index.htm)<sup>†</sup>
@@ -80,13 +80,13 @@ Jincheng Xiong,
 
 <span class="pub">IEEE ICCV 2025</span>
 
-*We decouple the geometry and appearance representation of 3DGS for more efficient scene modeling.*
+*We decouple the geometry and appearance of Gaussian splatting for more efficient scene modeling.*
 </div>
 </div>
 <div class='paper-box'>
 <div class='paper-box-text' markdown="1">
 
-## High-quality Surface Reconstruction using Gaussian Surfels
+## High-Quality Surface Reconstruction using Gaussian Surfels
 
 **Pinxuan Dai**\*, 
 [Jiamin Xu](https://superxjm.github.io/)\*,
@@ -103,7 +103,7 @@ Wenxiang Xie,
   / <a href="https://github.com/turandai/gaussian_surfels" title="Code" style="color: inherit;"><i class="fas fa-code fa-sm" aria-hidden="true"></i></a>
 ]
 
-*We use Gaussian surfels as geometry primitive to reconstruct high-quality mesh surface from multi-view images.*
+*We use Gaussian Surfels as geometry primitives to reconstruct high-quality mesh surface from multi-view images.*
 </div>
 </div>
 <div class='paper-box'>
