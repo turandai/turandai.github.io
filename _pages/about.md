@@ -16,7 +16,7 @@ I'm a Ph.D. student in computer science at the State Key Lab of CAD&CG,
 supervised by Prof. [Weiwei Xu](http://www.cad.zju.edu.cn/home/weiweixu/index.htm), co-supervised by Prof. [Rynson W.H. Lau](https://www.cs.cityu.edu.hk/~rynson/). 
 I did my undergrad at 
 <img src="images/uestc.png" alt="icon" style="height: 1em; vertical-align: middle;"> [UESTC](https://en.uestc.edu.cn/).
-My research interests are 3D scene reconstruction and understanding.
+My research interests are 3D/4D scene reconstruction and understanding.
 
 
 {% if site.google_scholar_stats_use_cdn %} {% assign gsDataBaseUrl = "https://cdn.jsdelivr.net/gh/" | append: site.repository | append: "@" %}
@@ -26,7 +26,7 @@ My research interests are 3D scene reconstruction and understanding.
 <img src="https://img.shields.io/endpoint?url={{ url | url_encode }}&logo=Google%20Scholar&labelColor=f6f6f6&color=9cf&style=flat&label=citations"> -->
 <!-- <p>URL: {{ url | url_encode }}</p> -->
 
-**Address**: 866 Yuhangtang Road, Hangzhou, China
+**Address**: 866 Yuhangtang Road, Hangzhou, China, 310058
 
 **Email**: daipinxuan [AT] zju.edu.cn
 
@@ -103,7 +103,7 @@ Wenxiang Xie,
   / <a href="https://github.com/turandai/gaussian_surfels" title="Code" style="color: inherit;"><i class="fas fa-code fa-sm" aria-hidden="true"></i></a>
 ]
 
-*We use Gaussian Surfels as geometry primitives to reconstruct high-quality mesh surface from multi-view images.*
+*We use Gaussian Surfels as geometry primitives to reconstruct mesh surface from multi-view images.*
 </div>
 </div>
 <div class='paper-box'>
@@ -119,7 +119,7 @@ Wenxiang Xie,
   / <a href="https://github.com/turandai/dfr" title="Code" style="color: inherit;"><i class="fas fa-code fa-sm" aria-hidden="true"></i></a>
 ]
 
-*We improve reflection synthesis on curved surfaces in image-based rendering using constrained reflection flow.*
+*We improve reflection synthesis on curved surfaces in image-based rendering using reflection flow.*
 </div>
 </div>
 
