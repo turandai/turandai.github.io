@@ -86,7 +86,7 @@ Xin Zhang,
 <div class='paper-box'>
 <div class='paper-box-text' markdown="1">
 
-## High-Quality Surface Reconstruction using Gaussian Surfels
+## High-quality Surface Reconstruction using Gaussian Surfels
 
 **Pinxuan Dai**\*, 
 [Jiamin Xu](https://superxjm.github.io/)\*,
