@@ -37,10 +37,16 @@ function showSlides(group, n) {
 
     // Lazy load the video
     const video = currentSlide.querySelector("video");
-    if (video && !video.src) {
-      video.src = video.getAttribute("data-src");
-      video.load();
+    if (video) { // Check if a video exists in the slide
+      if (!video.src) {
+        video.src = video.getAttribute("data-src");
+        video.load();
+      }
       video.play();
+
+      video.onended = function() {
+        showSlides(group, slideIndex += 1);
+      };
     }
 
     currentSlide.style.opacity = 1;
