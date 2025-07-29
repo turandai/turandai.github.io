@@ -2,12 +2,23 @@ let slideIndex = 1;
 
 // Next/previous controls
 function plusSlides(group, n) {
+  pauseCurrentSlide(group)
   showSlides(group, slideIndex += n);
 }
   
 // Thumbnail image controls
 function currentSlide(group, n) {
+  pauseCurrentSlide(group)
   showSlides(group, slideIndex = n);
+}
+
+function pauseCurrentSlide(group) {
+  let slides = document.getElementsByClassName("mySlides" + group.toString());
+  const currentSlide = slides[slideIndex - 1];
+  const video = currentSlide.querySelector("video");
+  if (video) {
+    video.pause()
+  }
 }
 
 function showSlides(group, n) {
@@ -20,7 +31,7 @@ function showSlides(group, n) {
 
   // Fade out all slides
   for (i = 0; i < slides.length; i++) {
-    slides[i].style.transition = "opacity 0.1s ease";
+    slides[i].style.transition = "opacity 0.2s ease";
     slides[i].style.opacity = 0;
   }
 
@@ -33,7 +44,7 @@ function showSlides(group, n) {
     const currentSlide = slides[slideIndex - 1];
     currentSlide.style.display = "block";
     currentSlide.style.opacity = 0;
-    currentSlide.style.transition = "opacity 0.1s ease";
+    currentSlide.style.transition = "opacity 0.2s ease";
 
     // Lazy load the video
     const video = currentSlide.querySelector("video");
@@ -42,16 +53,17 @@ function showSlides(group, n) {
         video.src = video.getAttribute("data-src");
         video.load();
       }
+      video.currentTime = 0;
       video.play();
 
       video.onended = function() {
+        video.pause()
         showSlides(group, slideIndex += 1);
       };
     }
-
     currentSlide.style.opacity = 1;
 
-  }, 100);
+  }, 200);
 
   for (i = 0; i < dots.length; i++) {
     dots[i].className = dots[i].className.replace(" active", "");
@@ -75,7 +87,7 @@ function changevideo(path, n)
     // video.play();
 
     // Fade out
-    video.style.transition = "opacity 0.1s ease";
+    video.style.transition = "opacity 0.2s ease";
     video.style.opacity = 0;
 
     video.addEventListener("transitionend", function handler() {
