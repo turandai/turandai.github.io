@@ -70,7 +70,7 @@ Peiquan Zhang\*,
 
 ## Neural Shell Texture Splatting: More Details and Fewer Primitives
 
-Xin Zhang, 
+[Xin Zhang](https://zhangxin-cg.github.io/), 
 [Anpei Chen](https://apchenstu.github.io/),
 [Jincheng Xiong](https://venite-xjc.github.io/),
 **Pinxuan Dai**,
