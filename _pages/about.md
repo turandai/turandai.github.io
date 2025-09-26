@@ -14,7 +14,7 @@ redirect_from:
 I'm a Ph.D. student in computer science at the State Key Lab of CAD&CG, 
 <img src="images/zju.png" alt="icon" style="height: 1em; vertical-align: middle;"> [Zhejiang University](https://www.zju.edu.cn/english/), 
 supervised by Prof. [Weiwei Xu](http://www.cad.zju.edu.cn/home/weiweixu/index.htm), co-supervised by Prof. [Rynson W.H. Lau](https://www.cs.cityu.edu.hk/~rynson/). 
-I did my undergrad at 
+I did my bachelor and master at 
 <img src="images/uestc.png" alt="icon" style="height: 1em; vertical-align: middle;"> [UESTC](https://en.uestc.edu.cn/).
 My research interests are 3D/4D scene reconstruction and understanding.
 
@@ -60,6 +60,7 @@ Peiquan Zhang\*,
   <a href="https://turandai.github.io/projects/4d_gaussian_video/" title="Project Page" style="color: inherit;"><i class="fas fa-link fa-sm" aria-hidden="true"></i></a>
   / <a href="https://turandai.github.io/projects/4d_gaussian_video/sig25_4dgv_author.pdf" title="Paper" style="color: inherit;"><i class="far fa-file-pdf fa-sm" aria-hidden="true"></i></a>
   <!-- | <a href="https://github.com/turandai/" title="Code" style="color: inherit;"><i class="fas fa-code" aria-hidden="true"></i></a> -->
+  / <a href="https://www.bilibili.com/video/BV1BXjtzBEQh" title="Video" style="color: inherit;"><i class="fas fa-film fa-sm" aria-hidden="true"></i></a>
 ]
 
 *We reconstruct high-quality, low-storage volumetric video that supports real-time streaming on the Internet.*
@@ -106,6 +107,7 @@ Wenxiang Xie,
   <a href="https://turandai.github.io/projects/gaussian_surfels/" title="Project Page" style="color: inherit;"><i class="fas fa-link fa-sm" aria-hidden="true"></i></a>
   / <a href="https://arxiv.org/pdf/2404.17774" title="Paper" style="color: inherit;"><i class="far fa-file-pdf fa-sm" aria-hidden="true"></i></a>
   / <a href="https://github.com/turandai/gaussian_surfels" title="Code" style="color: inherit;"><i class="fas fa-code fa-sm" aria-hidden="true"></i></a>
+  / <a href="https://www.bilibili.com/video/BV1eAgVeyET2" title="Video" style="color: inherit;"><i class="fas fa-film fa-sm" aria-hidden="true"></i></a>
 ]
 
 *We use Gaussian Surfels as geometry primitives to reconstruct mesh surface from multi-view images.*
