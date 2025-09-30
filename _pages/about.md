@@ -13,7 +13,7 @@ redirect_from:
 <!-- # About Me  -->
 I'm a Ph.D. student in computer science at the State Key Lab of CAD&CG, 
 <img src="images/zju.png" alt="icon" style="height: 1em; vertical-align: middle;"> [Zhejiang University](https://www.zju.edu.cn/english/), 
-supervised by Prof. [Weiwei Xu](http://www.cad.zju.edu.cn/home/weiweixu/index.htm), co-supervised by Prof. [Rynson W.H. Lau](https://www.cs.cityu.edu.hk/~rynson/). 
+supervised by Prof. [Weiwei Xu](http://www.cad.zju.edu.cn/home/weiweixu/index.htm) and Prof. [Rynson W.H. Lau](https://www.cs.cityu.edu.hk/~rynson/). 
 I did my bachelor and master at 
 <img src="images/uestc.png" alt="icon" style="height: 1em; vertical-align: middle;"> [UESTC](https://en.uestc.edu.cn/).
 My research interests are 3D/4D scene reconstruction and understanding.
