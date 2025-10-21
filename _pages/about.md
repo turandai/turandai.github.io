@@ -83,7 +83,7 @@ Peiquan Zhang\*,
 [
   <a href="https://zhangxin-cg.github.io/nest-splatting" title="Project Page" style="color: inherit;"><i class="fas fa-link fa-sm" aria-hidden="true"></i></a>
   / <a href="https://arxiv.org/pdf/2507.20200" title="Paper" style="color: inherit;"><i class="far fa-file-pdf fa-sm" aria-hidden="true"></i></a>
-  <!-- | <a href="https://github.com/turandai/" title="Code" style="color: inherit;"><i class="fas fa-code" aria-hidden="true"></i></a> -->
+  | <a href="https://github.com/zhangxin-cg/nest-splatting/" title="Code" style="color: inherit;"><i class="fas fa-code" aria-hidden="true"></i></a>
 ]
 
 *We decouple the geometry and appearance of Gaussian splatting for more efficient scene modeling.*
